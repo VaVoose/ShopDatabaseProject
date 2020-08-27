@@ -1,0 +1,17 @@
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\MainMenuWindow.g.cs
+C:\Users\Dominic\source\repos\FacilityManagement\WpfApp1\obj\Debug\MainMenuWindow.baml
