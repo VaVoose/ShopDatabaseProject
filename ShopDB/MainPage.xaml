@@ -10,15 +10,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <TextBox Name="Input_Box"></TextBox>
-            <Button Click="AddData">Add</Button>
-            <ListView Name="Output">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding}"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <TextBox Name="txtUserInput"></TextBox>
+            <Button Click="NextPage">Next Page</Button>
         </StackPanel>
     </Grid>
 </Page>

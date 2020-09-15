@@ -99,3 +99,8 @@ C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\qualifier
 C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758732200000000.json
+C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserCertPage.xbf
+C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserCertPage.g.i.cs
+C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserCertPage.g.cs
+C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserCertPage.xaml
+C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserCertPage.xbf

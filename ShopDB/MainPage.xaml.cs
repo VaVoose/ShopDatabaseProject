@@ -27,11 +27,30 @@ namespace ShopDB
             this.InitializeComponent();
         }
 
+        /**
+         * Sample function, currenty not bound to any UI object
+         */
         private void AddData(object sender, RoutedEventArgs e)
         {
-            DataAccess.AddData(Input_Box.Text);
+            //DataAccess.AddMachine(Input_Box.Text);
 
-            Output.ItemsSource = DataAccess.GetData();
+            //Output.ItemsSource = DataAccess.GetData();
+        }
+
+        /**
+         * Functions as the "Log in" button
+         * Sets the CurrentUser info based on the textbox and if its a valid user moves onto the UserCertPage
+         * if the user is invalid clear the text box and do nothing
+         */
+        private void NextPage(object sender, RoutedEventArgs e) {
+            if (DataAccess.GetUserInfo(txtUserInput.Text))
+            {
+                this.Frame.Navigate(typeof(UserCertPage));
+            }
+            else {
+                txtUserInput.Text = "";
+            }
+            
         }
     }
 }

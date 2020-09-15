@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-13T16:55:46.409</Modified>
+      <Modified>2020-09-15T19:54:02.056</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.exe">
       <PackagePath>entrypoint\ShopDB.exe</PackagePath>
-      <Modified>2020-09-13T16:55:46.022</Modified>
+      <Modified>2020-09-15T19:54:01.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\.nuget\packages\microsoft.data.sqlite.core\3.1.8\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
@@ -106,15 +106,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.xr.xml">
       <PackagePath>ShopDB.xr.xml</PackagePath>
-      <Modified>2020-09-13T16:23:29.337</Modified>
+      <Modified>2020-09-15T19:41:29.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-13T16:55:45.881</Modified>
+      <Modified>2020-09-15T19:54:01.520</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-09-13T16:55:45.881</Modified>
+      <Modified>2020-09-15T19:54:01.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserCertPage.xbf">
+      <PackagePath>UserCertPage.xbf</PackagePath>
+      <Modified>2020-09-15T19:54:01.520</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -122,11 +126,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-09-13T16:54:15.906</Modified>
+      <Modified>2020-09-15T19:41:29.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\ShopDB.exe">
       <PackagePath>ShopDB.exe</PackagePath>
-      <Modified>2020-09-13T16:55:46.404</Modified>
+      <Modified>2020-09-15T19:54:02.051</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

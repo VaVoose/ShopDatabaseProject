@@ -88,6 +88,9 @@
     <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserCertPage.xbf">
+      <PackagePath>UserCertPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
