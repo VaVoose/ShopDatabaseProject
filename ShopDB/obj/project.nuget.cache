@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J571vO6P5/d2RFHq0v7XSaal3sX6YZnnkam+cpPmvXqWlg0ujMNtjI1sryq3IfPxhLxw20UEyV2AScXn9kbEag==",
+  "dgSpecHash": "t3+hA7PNKm5qOCBYxT+8L4SLoLKKufpZFNSopgybmMK4cGjuuz/Lr9ATbAfxp3Kr9JAszA830CtSlj+9fq7lDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
+  "projectFilePath": "C:\\Users\\Dominic\\source\\repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dominic\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.8\\microsoft.data.sqlite.core.3.1.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",

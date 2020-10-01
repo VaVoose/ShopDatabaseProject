@@ -104,3 +104,8 @@ C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserCertP
 C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserCertPage.g.cs
 C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserCertPage.xaml
 C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserCertPage.xbf
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\AdminPage.xbf
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\AdminPage.g.i.cs
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\AdminPage.g.cs
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\AdminPage.xaml
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\AdminPage.xbf

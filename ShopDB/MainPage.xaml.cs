@@ -13,13 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace ShopDB
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -43,10 +38,19 @@ namespace ShopDB
          * if the user is invalid clear the text box and do nothing
          */
         private void NextPage(object sender, RoutedEventArgs e) {
-            if (DataAccess.GetUserInfo(txtUserInput.Text))
-            {
-                this.Frame.Navigate(typeof(UserCertPage));
+            //If the user exists
+            if (DataAccess.GetUserInfo(txtUserInput.Text)) {
+                //If the user is not an admin, open UserCertPage
+                if (CurrentUser.isAdmin == false)
+                {
+                    this.Frame.Navigate(typeof(UserCertPage));
+                }
+                //If the user is an Admin open the admin page
+                else {
+                    this.Frame.Navigate(typeof(AdminPage));
+                }
             }
+            //If the user doesn't exist, clear the text field
             else {
                 txtUserInput.Text = "";
             }

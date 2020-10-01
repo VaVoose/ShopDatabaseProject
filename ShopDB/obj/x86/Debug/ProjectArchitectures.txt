@@ -1,1 +1,1 @@
-C:\Users\Dominic\Source\Repos\ShopDatabaseProject\ShopDB\ShopDB.csproj;x86
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\ShopDB.csproj;x86

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj": {}
+    "C:\\Users\\Dominic\\source\\repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj": {
+    "C:\\Users\\Dominic\\source\\repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
+        "projectUniqueName": "C:\\Users\\Dominic\\source\\repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
         "projectName": "ShopDB",
-        "projectPath": "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
+        "projectPath": "C:\\Users\\Dominic\\source\\repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
         "packagesPath": "C:\\Users\\Dominic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\obj\\",
+        "outputPath": "C:\\Users\\Dominic\\source\\repos\\ShopDatabaseProject\\ShopDB\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
