@@ -25,6 +25,30 @@ namespace ShopDB
         public MachinesPage()
         {
             this.InitializeComponent();
+            refreshGrid();
+        }
+
+        private void AddMachine(object sender, RoutedEventArgs e)
+        {
+            DataAccess.AddMachine(txtNewMachineName.Text);
+
+            refreshGrid();
+        }
+
+        private void refreshGrid() {
+            MachinesOutput.ItemsSource = DataAccess.GetMachineList();
+        }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AdminPage));
+        }
+
+        private void deleteMachine(object sender, RoutedEventArgs e) {
+            var itemDataContext = (sender as FrameworkElement).DataContext;
+            string recordID = itemDataContext.ToString();
+            DataAccess.deleteMachine(recordID);
+            refreshGrid();
         }
     }
 }

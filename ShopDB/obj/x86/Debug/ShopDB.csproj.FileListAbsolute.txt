@@ -109,3 +109,8 @@ C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\AdminPage
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\AdminPage.g.cs
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\AdminPage.xaml
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\AdminPage.xbf
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MachinesPage.xbf
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\MachinesPage.g.i.cs
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\MachinesPage.g.cs
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\MachinesPage.xaml
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\MachinesPage.xbf

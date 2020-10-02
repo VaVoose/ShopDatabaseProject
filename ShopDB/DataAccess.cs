@@ -114,6 +114,26 @@ namespace ShopDB
             }
         }
 
+        public static void deleteMachine(string inputText)
+        {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = "DELETE FROM Machine WHERE rowid = (@entry);";
+                insertCommand.Parameters.AddWithValue("@entry", inputText);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
+        }
+
         /**
          * Sample function to query the sqlite database and return the data list
          */
@@ -136,6 +156,34 @@ namespace ShopDB
                 db.Close();
             }
 
+            return entries;
+        }
+
+        public static ObservableCollection<Machines> GetMachineList() {
+            ObservableCollection<Machines> entries = new ObservableCollection<Machines>();
+
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+
+                String selectCommandString = "" +
+                    "SELECT rowid, machineName FROM Machine";
+
+                SqliteCommand selectCommand = new SqliteCommand(selectCommandString, db);
+
+                SqliteDataReader query = selectCommand.ExecuteReader();
+
+                while (query.Read())
+                {
+                    Machines machine = new Machines();
+                    machine.recordID = query.GetString(0);
+                    machine.machineName = query.GetString(1);
+                    entries.Add(machine);
+                }
+
+                db.Close();
+            }
             return entries;
         }
 

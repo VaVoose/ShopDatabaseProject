@@ -124,6 +124,7 @@
     </Compile>
     <Compile Include="CurrentUser.cs" />
     <Compile Include="DataAccess.cs" />
+    <Compile Include="Machines.cs" />
     <Compile Include="MachinesPage.xaml.cs">
       <DependentUpon>MachinesPage.xaml</DependentUpon>
     </Compile>

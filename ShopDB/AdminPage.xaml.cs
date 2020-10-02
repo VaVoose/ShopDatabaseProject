@@ -33,7 +33,7 @@ namespace ShopDB
         }
 
         private void MachinesPage(object sender, RoutedEventArgs e) {
-            return;
+            this.Frame.Navigate(typeof(MachinesPage));
         }
 
         private void MainMenu(object sender, RoutedEventArgs e)

@@ -13,6 +13,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -20,18 +22,14 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="DataContext" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="ShopDB.AdminPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Name" />
-    </RootType>
-    <RootType FullName="ShopDB.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="Name" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="HeaderTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
@@ -44,6 +42,11 @@
       <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="ShopDB.MachinesPage" />
+    <RootType FullName="ShopDB.MainPage" />
     <RootType FullName="ShopDB.UserCertPage" />
   </Roots.RootTypes>
 </Roots>

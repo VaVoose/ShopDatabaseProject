@@ -11,23 +11,23 @@
     <Grid>
         <StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Click="Back" Content="Back"  VerticalAlignment="Top" />
-                <TextBox Name="txtNewMachineName"></TextBox>
-                <Button Click="AddMachine" Content="Add Machine"  VerticalAlignment="Top" />
+                <Button x:ConnectionId='7'              Content="Back"  VerticalAlignment="Top" />
+                <TextBox x:ConnectionId='8' Name="txtNewMachineName"></TextBox>
+                <Button x:ConnectionId='9'                    Content="Add Machine"  VerticalAlignment="Top" />
             </StackPanel>
             
-            <ListView Name="MachinesOutput">
+            <ListView x:ConnectionId='2' Name="MachinesOutput">
                 <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="local:Machines">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Name="RecordID" 
-                                       Text="{x:Bind recordID}"
+                    <DataTemplate                            >
+                        <StackPanel x:ConnectionId='3' Orientation="Horizontal">
+                            <TextBlock x:ConnectionId='4' Name="RecordID" 
+                                                               
                                        Width="80"
                                        Margin="0,0"/>
-                            <TextBlock Name="MachineName" 
-                                       Text="{x:Bind machineName}"
+                            <TextBlock x:ConnectionId='5' Name="MachineName" 
+                                                                  
                                        Width="200"/>
-                            <Button Click="deleteMachine" DataContext="{x:Bind recordID}" Content="Delete"/>
+                            <Button x:ConnectionId='6'                                                       Content="Delete"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -35,3 +35,4 @@
         </StackPanel>
     </Grid>
 </Page>
+

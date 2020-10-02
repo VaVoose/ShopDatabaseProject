@@ -10,10 +10,11 @@
 
     <Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Click="UsersPage" Content="Users"  VerticalAlignment="Top" Height="100" Width="100"/>
-            <Button Click="MachinesPage" Content="Machines" VerticalAlignment="Top" Height="100" Width="100"/>
-            <Button Click="MainMenu" Content="Back" VerticalAlignment="Top" Height="100" Width="100"/>
+            <Button x:ConnectionId='2'                   Content="Users"  VerticalAlignment="Top" Height="100" Width="100"/>
+            <Button x:ConnectionId='3'                      Content="Machines" VerticalAlignment="Top" Height="100" Width="100"/>
+            <Button x:ConnectionId='4'                  Content="Back" VerticalAlignment="Top" Height="100" Width="100"/>
         </StackPanel>
 
     </Grid>
 </Page>
+
