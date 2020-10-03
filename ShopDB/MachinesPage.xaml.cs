@@ -28,15 +28,18 @@ namespace ShopDB
             refreshGrid();
         }
 
-        private void AddMachine(object sender, RoutedEventArgs e)
+        private void refreshGrid()
         {
-            DataAccess.AddMachine(txtNewMachineName.Text);
-
-            refreshGrid();
+            MachinesOutput.ItemsSource = DataAccess.GetMachineList();
         }
 
-        private void refreshGrid() {
-            MachinesOutput.ItemsSource = DataAccess.GetMachineList();
+        private void AddMachine(object sender, RoutedEventArgs e)
+        {
+            if (txtNewMachineName.Text != "") {
+                DataAccess.AddMachine(txtNewMachineName.Text);
+                refreshGrid();
+            }
+            txtNewMachineName.Text = "";
         }
 
         private void Back(object sender, RoutedEventArgs e)

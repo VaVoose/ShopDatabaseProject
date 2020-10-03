@@ -52,7 +52,7 @@ namespace ShopDB
             }
             //If the user doesn't exist, clear the text field
             else {
-                txtUserInput.Text = "";
+                this.Frame.Navigate(typeof(NewUserPage), (txtUserInput.Text).ToString());
             }
             
         }

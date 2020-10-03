@@ -47,6 +47,7 @@
     </RootType>
     <RootType FullName="ShopDB.MachinesPage" />
     <RootType FullName="ShopDB.MainPage" />
+    <RootType FullName="ShopDB.NewUserPage" />
     <RootType FullName="ShopDB.UserCertPage" />
   </Roots.RootTypes>
 </Roots>

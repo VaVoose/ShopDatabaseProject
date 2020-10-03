@@ -94,6 +94,9 @@
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\NewUserPage.xbf">
+      <PackagePath>NewUserPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserCertPage.xbf">
       <PackagePath>UserCertPage.xbf</PackagePath>
     </AppxPackagedFile>

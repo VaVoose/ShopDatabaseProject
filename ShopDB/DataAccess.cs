@@ -114,6 +114,28 @@ namespace ShopDB
             }
         }
 
+        public static void CreateNewUser(string userID, string firstname, string lastname)
+        {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = "INSERT INTO User VALUES (@userid, @fname, @lname, 0);";
+                insertCommand.Parameters.AddWithValue("@userid", userID);
+                insertCommand.Parameters.AddWithValue("@fname", firstname);
+                insertCommand.Parameters.AddWithValue("@lname", lastname);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
+        }
+
         public static void deleteMachine(string inputText)
         {
             string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
