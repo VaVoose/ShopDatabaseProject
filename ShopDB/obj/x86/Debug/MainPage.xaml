@@ -1,6 +1,7 @@
 ﻿<Page
     x:Class="ShopDB.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ShopDB"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,13 +14,10 @@
             <Image Source="/Resources/Polar Bear Badge.png" Height="800" Width="800" Margin="0,0,125,0" />
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBox x:ConnectionId='2' Foreground="White" Name="txtUserInput" MaxLength="9" CharacterSpacing="5" FontWeight="ExtraBold" FontFamily="Consolas" FontSize="75" Width="750" />
+                <TextBox x:ConnectionId='2' Foreground="White" Name="txtUserInput" MaxLength="9" CharacterSpacing="75" FontWeight="ExtraBold" FontFamily="Consolas" FontSize="75" Width="750" />
                 <Button x:ConnectionId='3'                  VerticalAlignment="Center" Foreground="OrangeRed" Margin="25,0,0,0" FontFamily="Segoe MDL2 Assets" FontSize="75" Content="&#xE725;"/>
             </StackPanel>
         </StackPanel>
-
-        <!--Different font potentially?--><!--
-        <TextBlock Text="Ohio Northern Engineering - James Lehr Kennedy Building" Foreground="OrangeRed" FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,50"/>-->
     </Grid>
 </Page>
 

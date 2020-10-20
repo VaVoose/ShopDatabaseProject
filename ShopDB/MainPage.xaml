@@ -14,7 +14,7 @@
             <Image Source="/Resources/Polar Bear Badge.png" Height="800" Width="800" Margin="0,0,125,0" />
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBox extensions:TextBoxRegex.Regex=""  Foreground="White" Name="txtUserInput" MaxLength="9" CharacterSpacing="75" FontWeight="ExtraBold" FontFamily="Consolas" FontSize="75" Width="750" />
+                <TextBox Foreground="White" Name="txtUserInput" MaxLength="9" CharacterSpacing="75" FontWeight="ExtraBold" FontFamily="Consolas" FontSize="75" Width="750" />
                 <Button Click="NextPage" VerticalAlignment="Center" Foreground="OrangeRed" Margin="25,0,0,0" FontFamily="Segoe MDL2 Assets" FontSize="75" Content="&#xE725;"/>
             </StackPanel>
         </StackPanel>
