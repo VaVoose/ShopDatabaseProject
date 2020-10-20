@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "t3+hA7PNKm5qOCBYxT+8L4SLoLKKufpZFNSopgybmMK4cGjuuz/Lr9ATbAfxp3Kr9JAszA830CtSlj+9fq7lDA==",
+  "dgSpecHash": "kS57biq/fCe2ntvJUxAS1XpTgXP0L3z0K7O1JiC5ZSTR56zA6RVR0WJqkc0g6xyjWa1H6pkdxVcQBcPdITLhhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dominic\\source\\repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
+  "projectFilePath": "C:\\Users\\derek\\source\\repos\\VaVoose\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dominic\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.8\\microsoft.data.sqlite.core.3.1.8.nupkg.sha512",
+    "C:\\Users\\derek\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.8\\microsoft.data.sqlite.core.3.1.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
@@ -28,11 +28,11 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
-    "C:\\Users\\Dominic\\.nuget\\packages\\sqlitepclraw.bundle_winsqlite3\\2.0.4\\sqlitepclraw.bundle_winsqlite3.2.0.4.nupkg.sha512",
-    "C:\\Users\\Dominic\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
-    "C:\\Users\\Dominic\\.nuget\\packages\\sqlitepclraw.provider.winsqlite3\\2.0.4\\sqlitepclraw.provider.winsqlite3.2.0.4.nupkg.sha512",
-    "C:\\Users\\Dominic\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\Dominic\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    "C:\\Users\\derek\\.nuget\\packages\\sqlitepclraw.bundle_winsqlite3\\2.0.4\\sqlitepclraw.bundle_winsqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\derek\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\derek\\.nuget\\packages\\sqlitepclraw.provider.winsqlite3\\2.0.4\\sqlitepclraw.provider.winsqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\derek\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\derek\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
   ],
   "logs": []
 }

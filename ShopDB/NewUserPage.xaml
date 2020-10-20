@@ -6,19 +6,45 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Black">
 
+    <!--Creating style used for all text blocks-->
+    <Page.Resources>
+        <Style x:Key="textBlockStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Consolas" />
+            <Setter Property="FontWeight" Value="ExtraBold" />
+            <Setter Property="FontSize" Value="36" />
+        </Style>
+    </Page.Resources>
+    
     <Grid>
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Name="tbUserID" Text="Enter First Name"></TextBlock>
-            <TextBlock Text="Enter First Name"></TextBlock>
-            <TextBox Name="txtFirstName"></TextBox>
-            <TextBlock Text="Enter Last Name"></TextBlock>
-            <TextBox Name="txtLastName"></TextBox>
-            <StackPanel Orientation="Horizontal">
-                <Button Click="Cancel">Cancel</Button>
-                <Button Click="Next">Continue</Button>
-            </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" >
+
+            <!--Initializing textblock style-->
+            <StackPanel.Resources>
+                <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
+            </StackPanel.Resources>
+
+            <Grid Width="750" Margin="0,15,0,25">
+                <TextBlock HorizontalAlignment="Left" Text="User ID: " />
+                <TextBlock HorizontalAlignment="Right" Name="tbUserID" />
+            </Grid>
+
+            <Grid Width="750" Margin="0,15,0,15">
+                <TextBlock HorizontalAlignment="Left" Text="Enter First Name: " />
+                <TextBox HorizontalAlignment="Right" Foreground="White" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Name="txtFirstName" Width="350" />
+            </Grid>
+
+            <Grid Width="750" Margin="0,15,0,15">
+                <TextBlock HorizontalAlignment="Left" Text="Enter Last Name: " />
+                <TextBox HorizontalAlignment="Right" Foreground="White" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36"  Name="txtLastName" Width="350"/>
+            </Grid>
+
+            <Grid Width="500" Margin="0,15,0,15">
+                <Button HorizontalAlignment="Left" Click="Cancel" Background="White" Foreground="OrangeRed" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Content="Cancel" />
+                <Button HorizontalAlignment="Right" Click="Next" Background="White" Foreground="OrangeRed" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Content="Continue" />
+            </Grid>
         </StackPanel>
 
     </Grid>

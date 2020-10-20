@@ -6,13 +6,20 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Black">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel>
-            <TextBox x:ConnectionId='2' Name="txtUserInput"></TextBox>
-            <Button x:ConnectionId='3'                 >Next Page</Button>
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Image Source="/Resources/Polar Bear Badge.png" Height="800" Width="800" Margin="0,0,125,0" />
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBox x:ConnectionId='2' Foreground="White" Name="txtUserInput" MaxLength="9" CharacterSpacing="5" FontWeight="ExtraBold" FontFamily="Consolas" FontSize="75" Width="750" />
+                <Button x:ConnectionId='3'                  VerticalAlignment="Center" Foreground="OrangeRed" Margin="25,0,0,0" FontFamily="Segoe MDL2 Assets" FontSize="75" Content="&#xE725;"/>
+            </StackPanel>
         </StackPanel>
+
+        <!--Different font potentially?--><!--
+        <TextBlock Text="Ohio Northern Engineering - James Lehr Kennedy Building" Foreground="OrangeRed" FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,50"/>-->
     </Grid>
 </Page>
 
