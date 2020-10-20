@@ -28,7 +28,8 @@ namespace ShopDB
         public UserCertPage()
         {
             this.InitializeComponent();
-            
+
+            txtName.Text = CurrentUser.firstname + " " + CurrentUser.lastname;
             UserCertOutput.ItemsSource = DataAccess.GetUserCeritications(CurrentUser.id);
 
         }

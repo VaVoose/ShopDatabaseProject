@@ -25,7 +25,7 @@
                 
                 
                 <!--ADD FIRST + LAST NAME HERE THROUGH BINDING-->
-                <TextBlock HorizontalAlignment="Right" Text="Insert Name Here" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
+                <TextBlock x:ConnectionId='11' x:Name="txtName" HorizontalAlignment="Right" Text="Insert Name Here" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
                 
             </Grid>
             <StackPanel>
