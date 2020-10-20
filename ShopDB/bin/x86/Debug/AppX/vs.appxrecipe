@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DAMEPC</Machine>
-    <WindowsUser>Dominic</WindowsUser>
+    <Machine>DESKTOP-BES7MQ3</Machine>
+    <WindowsUser>derek</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>731e2d96-8670-43b6-a4be-efb6ab16a2db</PackageIdentityName>
     <PackageIdentityPublisher>CN=Dominic</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>93714E9DAA4CFDC42DABCD9368EAA482C7DD7917F842AA218B6362D829078C1E</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>7FDE9E69CF0C07EB5E2DC592D28B2EC6D94D5876698559696674C1C0C147A6FB</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>731e2d96-8670-43b6-a4be-efb6ab16a2db_1.0.0.0_x86__jbwxvvtd9y170</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>731e2d96-8670-43b6-a4be-efb6ab16a2db_jbwxvvtd9y170!App</RegisteredUserModeAppID>
     <RegisteredPackageID>731e2d96-8670-43b6-a4be-efb6ab16a2db</RegisteredPackageID>
@@ -27,18 +27,18 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-03T14:10:52.310</Modified>
+      <Modified>2020-10-20T14:14:35.478</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.exe">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.exe">
       <PackagePath>entrypoint\ShopDB.exe</PackagePath>
-      <Modified>2020-10-03T14:10:51.655</Modified>
+      <Modified>2020-10-20T14:14:35.218</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\.nuget\packages\microsoft.data.sqlite.core\3.1.8\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+    <AppxPackagedFile Include="C:\Users\derek\.nuget\packages\microsoft.data.sqlite.core\3.1.8\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
       <Modified>2020-08-21T04:57:46.000</Modified>
     </AppxPackagedFile>
@@ -46,103 +46,107 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-27T23:16:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\.nuget\packages\sqlitepclraw.bundle_winsqlite3\2.0.4\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+    <AppxPackagedFile Include="C:\Users\derek\.nuget\packages\sqlitepclraw.bundle_winsqlite3\2.0.4\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
       <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
       <Modified>2020-09-03T21:13:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\.nuget\packages\sqlitepclraw.core\2.0.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+    <AppxPackagedFile Include="C:\Users\derek\.nuget\packages\sqlitepclraw.core\2.0.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
       <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
       <Modified>2020-09-03T21:13:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\.nuget\packages\sqlitepclraw.provider.winsqlite3\2.0.4\lib\netstandard2.0\SQLitePCLRaw.provider.winsqlite3.dll">
+    <AppxPackagedFile Include="C:\Users\derek\.nuget\packages\sqlitepclraw.provider.winsqlite3\2.0.4\lib\netstandard2.0\SQLitePCLRaw.provider.winsqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.winsqlite3.dll</PackagePath>
       <Modified>2020-09-03T21:13:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\derek\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
       <Modified>2018-09-18T23:38:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2018-10-23T06:33:40.000</Modified>
+      <Modified>2018-10-23T05:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-09-13T15:22:55.941</Modified>
+      <Modified>2020-09-27T18:31:02.774</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-08-26T23:19:02.779</Modified>
+      <Modified>2020-09-27T18:31:02.769</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-26T23:19:02.783</Modified>
+      <Modified>2020-09-27T18:31:02.769</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-26T23:19:02.784</Modified>
+      <Modified>2020-09-27T18:31:02.771</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-26T23:19:02.786</Modified>
+      <Modified>2020-09-27T18:31:02.771</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-26T23:19:02.787</Modified>
+      <Modified>2020-09-27T18:31:02.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-26T23:19:02.788</Modified>
+      <Modified>2020-09-27T18:31:02.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-08-26T23:19:02.788</Modified>
+      <Modified>2020-09-27T18:31:02.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.xr.xml">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png">
+      <PackagePath>Resources\Polar Bear Badge.png</PackagePath>
+      <Modified>2020-10-19T16:32:18.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.xr.xml">
       <PackagePath>ShopDB.xr.xml</PackagePath>
-      <Modified>2020-10-03T13:27:30.377</Modified>
+      <Modified>2020-10-20T14:14:35.123</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-03T14:10:51.490</Modified>
+      <Modified>2020-10-20T14:03:49.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\AdminPage.xbf">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\AdminPage.xbf">
       <PackagePath>AdminPage.xbf</PackagePath>
-      <Modified>2020-10-03T14:10:51.490</Modified>
+      <Modified>2020-10-20T14:03:49.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MachinesPage.xbf">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\MachinesPage.xbf">
       <PackagePath>MachinesPage.xbf</PackagePath>
-      <Modified>2020-10-03T14:10:51.490</Modified>
+      <Modified>2020-10-20T14:03:49.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-03T14:10:51.490</Modified>
+      <Modified>2020-10-20T14:14:35.125</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\NewUserPage.xbf">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\NewUserPage.xbf">
       <PackagePath>NewUserPage.xbf</PackagePath>
-      <Modified>2020-10-03T14:10:51.490</Modified>
+      <Modified>2020-10-20T14:03:49.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserCertPage.xbf">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserCertPage.xbf">
       <PackagePath>UserCertPage.xbf</PackagePath>
-      <Modified>2020-10-03T14:10:51.490</Modified>
+      <Modified>2020-10-20T14:03:49.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2018-10-23T05:44:28.000</Modified>
+      <Modified>2018-10-23T04:44:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-03T13:28:05.828</Modified>
+      <Modified>2020-10-20T14:13:45.318</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\ShopDB.exe">
+    <AppxPackagedFile Include="C:\Users\derek\source\repos\VaVoose\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\ShopDB.exe">
       <PackagePath>ShopDB.exe</PackagePath>
-      <Modified>2020-10-03T14:10:52.303</Modified>
+      <Modified>2020-10-20T14:14:35.475</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

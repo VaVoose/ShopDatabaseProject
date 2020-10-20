@@ -8809,28 +8809,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dominic\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\derek\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
+      "projectUniqueName": "C:\\Users\\derek\\source\\repos\\VaVoose\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
       "projectName": "ShopDB",
-      "projectPath": "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
-      "packagesPath": "C:\\Users\\Dominic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dominic\\Source\\Repos\\ShopDatabaseProject\\ShopDB\\obj\\",
+      "projectPath": "C:\\Users\\derek\\source\\repos\\VaVoose\\ShopDatabaseProject\\ShopDB\\ShopDB.csproj",
+      "packagesPath": "C:\\Users\\derek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\derek\\source\\repos\\VaVoose\\ShopDatabaseProject\\ShopDB\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dominic\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\derek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.17134"

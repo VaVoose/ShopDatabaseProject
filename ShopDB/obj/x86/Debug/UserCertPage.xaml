@@ -6,49 +6,77 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Black">
 
-    <Grid>
-        <StackPanel>
-            <ListView>
-                <ListView.HeaderTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal"  >
-                            <TextBlock Text="Record ID" Width="80" Margin="8,0" Foreground="Orange" />
-                            <TextBlock Text="User ID" Width="200"  Foreground="Orange" />
-                            <TextBlock Text="Machine ID" Width="100"  Foreground="Orange" />
-                            <TextBlock Text="Machine Name" Width="300"  Foreground="Orange" />
-                            <TextBlock Text="Date Certified" Width="300"  Foreground="Orange" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.HeaderTemplate>
-            </ListView>
-            <ListView x:ConnectionId='2' Name="UserCertOutput">
-                <ListView.ItemTemplate>
-                    <DataTemplate                             >
-                        <StackPanel x:ConnectionId='4' Orientation="Horizontal">
-                            <TextBlock x:ConnectionId='5' Name="RecordID" 
+    <Page.Resources>
+        <Style x:Key="textBlockStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="OrangeRed" />
+            <Setter Property="FontFamily" Value="Consolas" />
+            <Setter Property="FontWeight" Value="ExtraBold" />
+            <Setter Property="FontSize" Value="36" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+    </Page.Resources>
+
+    <Grid HorizontalAlignment="Center" Margin="0,50,0,0">
+        <StackPanel Orientation="Vertical">
+            <Grid Width="750" Margin="0,0,0,20">
+                <TextBlock HorizontalAlignment="Left" Text="Current User : " FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
+                
+                
+                <!--ADD FIRST + LAST NAME HERE THROUGH BINDING-->
+                <TextBlock HorizontalAlignment="Right" Text="Insert Name Here" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
+                
+            </Grid>
+            <StackPanel>
+                <ListView>
+                    <ListView.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" >
+                                <StackPanel.Resources>
+                                    <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
+                                </StackPanel.Resources>
+
+                                <TextBlock Text="Record ID" Width="250" FontFamily="Consolas" />
+                                <TextBlock Text="User ID" Width="250" FontFamily="Consolas" />
+                                <TextBlock Text="Machine ID" Width="300" FontFamily="Consolas" />
+                                <TextBlock Text="Machine Name" Width="400" FontFamily="Consolas" />
+                                <TextBlock Text="Date Certified" Width="350" FontFamily="Consolas" />
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.HeaderTemplate>
+                </ListView>
+                <ListView x:ConnectionId='2' Name="UserCertOutput">
+                    <ListView.ItemTemplate>
+                        <DataTemplate                             >
+                            <StackPanel x:ConnectionId='4' Orientation="Horizontal">
+                                <StackPanel.Resources>
+                                    <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
+                                </StackPanel.Resources>
+
+                                <TextBlock x:ConnectionId='5' Name="RecordID" 
                                                                
-                                       Width="80"
-                                       Margin="0,0"/>
-                            <TextBlock x:ConnectionId='6' Name="UserID" 
+                                       Width="250" />
+                                <TextBlock x:ConnectionId='6' Name="UserID" 
                                                              
-                                       Width="200"/>
-                            <TextBlock x:ConnectionId='7' Name="MachineID" 
+                                       Width="250"/>
+                                <TextBlock x:ConnectionId='7' Name="MachineID" 
                                                                 
-                                       Width="100"/>
-                            <TextBlock x:ConnectionId='8' Name="Machine Name" 
+                                       Width="300"/>
+                                <TextBlock x:ConnectionId='8' Name="Machine Name" 
                                                                   
-                                       Width="300"/>
-                            <TextBlock x:ConnectionId='9' Name ="DateCertified" 
+                                       Width="400"/>
+                                <TextBlock x:ConnectionId='9' Name ="DateCertified" 
                                                                
-                                       Width="300"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+                                       Width="350"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
 
-            </ListView>
-            <Button x:ConnectionId='3'                 >Back</Button>
+                </ListView>
+                <Button x:ConnectionId='3'                 >Back</Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

@@ -6,49 +6,77 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Black">
 
-    <Grid>
-        <StackPanel>
-            <ListView>
-                <ListView.HeaderTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal"  >
-                            <TextBlock Text="Record ID" Width="80" Margin="8,0" Foreground="Orange" />
-                            <TextBlock Text="User ID" Width="200"  Foreground="Orange" />
-                            <TextBlock Text="Machine ID" Width="100"  Foreground="Orange" />
-                            <TextBlock Text="Machine Name" Width="300"  Foreground="Orange" />
-                            <TextBlock Text="Date Certified" Width="300"  Foreground="Orange" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.HeaderTemplate>
-            </ListView>
-            <ListView Name="UserCertOutput">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="local:UserCerts">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Name="RecordID" 
+    <Page.Resources>
+        <Style x:Key="textBlockStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="OrangeRed" />
+            <Setter Property="FontFamily" Value="Consolas" />
+            <Setter Property="FontWeight" Value="ExtraBold" />
+            <Setter Property="FontSize" Value="36" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+    </Page.Resources>
+
+    <Grid HorizontalAlignment="Center" Margin="0,50,0,0">
+        <StackPanel Orientation="Vertical">
+            <Grid Width="750" Margin="0,0,0,20">
+                <TextBlock HorizontalAlignment="Left" Text="Current User : " FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
+                
+                
+                <!--ADD FIRST + LAST NAME HERE THROUGH BINDING-->
+                <TextBlock HorizontalAlignment="Right" Text="Insert Name Here" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
+                
+            </Grid>
+            <StackPanel>
+                <ListView>
+                    <ListView.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" >
+                                <StackPanel.Resources>
+                                    <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
+                                </StackPanel.Resources>
+
+                                <TextBlock Text="Record ID" Width="250" FontFamily="Consolas" />
+                                <TextBlock Text="User ID" Width="250" FontFamily="Consolas" />
+                                <TextBlock Text="Machine ID" Width="300" FontFamily="Consolas" />
+                                <TextBlock Text="Machine Name" Width="400" FontFamily="Consolas" />
+                                <TextBlock Text="Date Certified" Width="350" FontFamily="Consolas" />
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.HeaderTemplate>
+                </ListView>
+                <ListView Name="UserCertOutput">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="local:UserCerts">
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel.Resources>
+                                    <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
+                                </StackPanel.Resources>
+
+                                <TextBlock Name="RecordID" 
                                        Text="{x:Bind recordID}"
-                                       Width="80"
-                                       Margin="0,0"/>
-                            <TextBlock Name="UserID" 
+                                       Width="250" />
+                                <TextBlock Name="UserID" 
                                        Text="{x:Bind userID}"
-                                       Width="200"/>
-                            <TextBlock Name="MachineID" 
+                                       Width="250"/>
+                                <TextBlock Name="MachineID" 
                                        Text="{x:Bind machineID}"
-                                       Width="100"/>
-                            <TextBlock Name="Machine Name" 
+                                       Width="300"/>
+                                <TextBlock Name="Machine Name" 
                                        Text="{x:Bind machineName}"
-                                       Width="300"/>
-                            <TextBlock Name ="DateCertified" 
+                                       Width="400"/>
+                                <TextBlock Name ="DateCertified" 
                                        Text="{x:Bind certDate}"
-                                       Width="300"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+                                       Width="350"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
 
-            </ListView>
-            <Button Click="MainMenu">Back</Button>
+                </ListView>
+                <Button Click="MainMenu">Back</Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>
