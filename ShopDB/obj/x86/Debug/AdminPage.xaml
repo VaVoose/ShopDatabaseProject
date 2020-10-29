@@ -12,7 +12,8 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:ConnectionId='2'                   Content="Users"  VerticalAlignment="Top" Height="100" Width="100"/>
             <Button x:ConnectionId='3'                      Content="Machines" VerticalAlignment="Top" Height="100" Width="100"/>
-            <Button x:ConnectionId='4'                  Content="Back" VerticalAlignment="Top" Height="100" Width="100"/>
+            <Button x:ConnectionId='4'                        Content="Backup DB" VerticalAlignment="Top" Height="100" Width="100"/>
+            <Button x:ConnectionId='5'                  Content="Back" VerticalAlignment="Top" Height="100" Width="100"/>
         </StackPanel>
 
     </Grid>

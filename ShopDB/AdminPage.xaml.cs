@@ -36,6 +36,10 @@ namespace ShopDB
             this.Frame.Navigate(typeof(MachinesPage));
         }
 
+        private void BackupDatabase(object sender, RoutedEventArgs e) {
+            DataAccess.BackupDatabase();
+        }
+
         private void MainMenu(object sender, RoutedEventArgs e)
         {
             CurrentUser.Reset();

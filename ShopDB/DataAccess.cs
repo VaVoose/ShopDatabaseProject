@@ -11,11 +11,42 @@ using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Diagnostics;
 using Windows.Networking.Connectivity;
+using Windows.Storage.Pickers;
 
 namespace ShopDB
 {
     static class DataAccess
     {
+        
+
+        public async static void BackupDatabase() {
+            
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+
+            var folderPicker = new FolderPicker();
+            folderPicker.SuggestedStartLocation = PickerLocationId.Desktop;
+            folderPicker.FileTypeFilter.Add("*");
+
+            StorageFolder folder = await folderPicker.PickSingleFolderAsync();
+            if (folder != null)
+            {
+                // Application now has read/write access to all contents in the picked folder
+                // (including other sub-folder contents)
+                Windows.Storage.AccessCache.StorageApplicationPermissions.
+                FutureAccessList.AddOrReplace("PickedFolderToken", folder);
+                string backupPath = Path.Combine(folder.Path, "machineCerts-" + DateTime.UtcNow.Date.ToString("MM-dd-yyyy") + ".bk.db");
+                File.Copy(dbpath, backupPath);
+
+            }
+            else
+            {
+                Console.WriteLine("It didn't work");
+            }
+
+            //string backupPath = Path.Combine(@"C:\Users\Dominic\Desktop\dbBackups\", "machineCerts-" + DateTime.UtcNow.Date.ToString("dd-MM-yyyy") + ".bk.db" );
+            //File.Copy(dbpath, backupPath);
+        }
+
         /*
             This function Initalizes the database for use in the program 
         */

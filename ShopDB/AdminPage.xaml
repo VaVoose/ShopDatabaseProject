@@ -12,6 +12,7 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Click="UsersPage" Content="Users"  VerticalAlignment="Top" Height="100" Width="100"/>
             <Button Click="MachinesPage" Content="Machines" VerticalAlignment="Top" Height="100" Width="100"/>
+            <Button Click="BackupDatabase" Content="Backup DB" VerticalAlignment="Top" Height="100" Width="100"/>
             <Button Click="MainMenu" Content="Back" VerticalAlignment="Top" Height="100" Width="100"/>
         </StackPanel>
 
