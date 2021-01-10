@@ -39,7 +39,8 @@ namespace ShopDB
         }
 
         private void Cancel(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(MainPage));
+            //this.Frame.Navigate(typeof(MainPage));
+            this.Frame.GoBack();
         }
 
         private void Next(object sender, RoutedEventArgs e)

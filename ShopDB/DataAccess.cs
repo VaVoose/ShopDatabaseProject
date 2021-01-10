@@ -167,6 +167,25 @@ namespace ShopDB
             }
         }
 
+        public static void changeAdmin(string inputText) {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = " UPDATE User SET isAdmin = ~isAdmin WHERE rowid = (@entry);";
+                insertCommand.Parameters.AddWithValue("@entry", inputText);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
+        }
+
         public static void deleteMachine(string inputText)
         {
             string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
@@ -179,6 +198,25 @@ namespace ShopDB
 
                 //Use parameterized query to prevent SQL injection attacks
                 insertCommand.CommandText = "DELETE FROM Machine WHERE rowid = (@entry);";
+                insertCommand.Parameters.AddWithValue("@entry", inputText);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
+        }
+
+        public static void deleteUser(string inputText) {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = "DELETE FROM User WHERE rowid = (@entry);";
                 insertCommand.Parameters.AddWithValue("@entry", inputText);
 
                 insertCommand.ExecuteReader();
@@ -233,6 +271,37 @@ namespace ShopDB
                     machine.recordID = query.GetString(0);
                     machine.machineName = query.GetString(1);
                     entries.Add(machine);
+                }
+
+                db.Close();
+            }
+            return entries;
+        }
+
+        public static ObservableCollection<UserList> GetUserList() {
+            ObservableCollection<UserList> entries = new ObservableCollection<UserList>();
+
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+
+                String selectCommandString = "" +
+                    "SELECT rowid, userID, fName, lName, isAdmin FROM User";
+
+                SqliteCommand selectCommand = new SqliteCommand(selectCommandString, db);
+
+                SqliteDataReader query = selectCommand.ExecuteReader();
+
+                while (query.Read())
+                {
+                    UserList u = new UserList();
+                    u.rowID = query.GetString(0);
+                    u.userID = query.GetString(1);
+                    u.firstName = query.GetString(2);
+                    u.lastName = query.GetString(3);
+                    u.isAdmin = query.GetBoolean(4);
+                    entries.Add(u);
                 }
 
                 db.Close();

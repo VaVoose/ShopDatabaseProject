@@ -29,7 +29,7 @@ namespace ShopDB
 
         private void UsersPage(object sender, RoutedEventArgs e)
         {
-            return;
+            this.Frame.Navigate(typeof(UsersPage));
         }
 
         private void MachinesPage(object sender, RoutedEventArgs e) {

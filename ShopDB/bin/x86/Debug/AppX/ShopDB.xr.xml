@@ -67,6 +67,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="ShopDB.MachinesPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
@@ -86,5 +87,12 @@
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="ShopDB.UserCertPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="DataContext" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="ShopDB.UsersPage" />
   </Roots.RootTypes>
 </Roots>
