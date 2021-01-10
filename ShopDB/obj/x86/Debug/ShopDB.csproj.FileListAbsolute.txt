@@ -197,3 +197,8 @@ C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UsersPage
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UsersPage.xaml
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UsersPage.xbf
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UsersPage.xbf
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserEditPage.xbf
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserEditPage.g.i.cs
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserEditPage.g.cs
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserEditPage.xaml
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\UserEditPage.xbf

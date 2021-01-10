@@ -37,6 +37,12 @@ namespace ShopDB
             this.Frame.Navigate(typeof(AdminPage));
         }
 
+        private void editUser(object sender, RoutedEventArgs e) {
+            var itemDataContext = (sender as FrameworkElement).DataContext;
+            string rowID = itemDataContext.ToString();
+            this.Frame.Navigate(typeof(UserEditPage), rowID);
+        }
+
         private void Add(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(NewUserPage), txtNewUserID.Text);
         }

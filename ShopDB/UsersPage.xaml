@@ -31,6 +31,7 @@
                                        Text="{x:Bind lastName}"
                                        Width="200"/>
                             <CheckBox Name="chkIsAdmin" IsChecked="{x:Bind isAdmin}" Click="changeAdmin" DataContext="{x:Bind rowID}"/>
+                            <Button Click="editUser" DataContext="{x:Bind userID}" Content="Edit User Certs"/>
                             <Button Click="deleteUser" DataContext="{x:Bind rowID}" Content="Delete"/>
                         </StackPanel>
                     </DataTemplate>

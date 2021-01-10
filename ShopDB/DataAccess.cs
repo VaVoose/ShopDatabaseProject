@@ -186,6 +186,27 @@ namespace ShopDB
             }
         }
 
+        public static void updateFirstname(string name, string rowID)
+        {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = " UPDATE User SET fName = @n WHERE rowid = (@entry);";
+                insertCommand.Parameters.AddWithValue("@n", rowID);
+                insertCommand.Parameters.AddWithValue("@entry", rowID);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
+        }
+
         public static void deleteMachine(string inputText)
         {
             string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
@@ -352,6 +373,25 @@ namespace ShopDB
             return entries;
         }
 
+        public static void reCertify(string input) {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = " UPDATE Certified SET dateAquired = datetime('now') WHERE rowid = (@entry);";
+                insertCommand.Parameters.AddWithValue("@entry", input);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
+        }
+
         /**
          * Sets the current user info based on the userId string parameter
          * Returns true if it is a valid user in the database
@@ -391,6 +431,40 @@ namespace ShopDB
                 
             }
         }
-        
+
+        public static ObservableCollection<UserEditInfo> GetUserEditInfo(string userInfo)
+        {
+            ObservableCollection<UserEditInfo> entries = new ObservableCollection<UserEditInfo>();
+
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+
+                String selectCommandString = "SELECT rowID, userID, fName, lName " +
+                    "FROM User " +
+                    "WHERE userID = @entry; ";
+
+                SqliteCommand selectCommand = new SqliteCommand(selectCommandString, db);
+
+                selectCommand.Parameters.AddWithValue("@entry", userInfo);
+
+                SqliteDataReader query = selectCommand.ExecuteReader();
+
+                while (query.Read())
+                {
+                    UserEditInfo uei = new UserEditInfo();
+                    uei.rowID = query.GetString(0);
+                    uei.userID = query.GetString(1);
+                    uei.firstName = query.GetString(2);
+                    uei.lastName = query.GetString(3);
+                    entries.Add(uei);
+                }
+
+                db.Close();
+            }
+            return entries;
+        }
+
     }
 }

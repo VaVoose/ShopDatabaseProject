@@ -11,9 +11,9 @@
     <Grid>
         <StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:ConnectionId='9'              Content="Back"  VerticalAlignment="Top" />
-                <TextBox x:ConnectionId='10' Name="txtNewUserID" PlaceholderText="New User ID"></TextBox>
-                <Button x:ConnectionId='11'             Content="Add User"  VerticalAlignment="Top" />
+                <Button x:ConnectionId='10'              Content="Back"  VerticalAlignment="Top" />
+                <TextBox x:ConnectionId='11' Name="txtNewUserID" PlaceholderText="New User ID"></TextBox>
+                <Button x:ConnectionId='12'             Content="Add User"  VerticalAlignment="Top" />
             </StackPanel>
             <ListView x:ConnectionId='2' Name="UsersOutput">
                 <ListView.ItemTemplate>
@@ -31,7 +31,8 @@
                                                                
                                        Width="200"/>
                             <CheckBox x:ConnectionId='7' Name="chkIsAdmin"                                                                              />
-                            <Button x:ConnectionId='8'                                                 Content="Delete"/>
+                            <Button x:ConnectionId='8'                                                Content="Edit User Certs"/>
+                            <Button x:ConnectionId='9'                                                 Content="Delete"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
