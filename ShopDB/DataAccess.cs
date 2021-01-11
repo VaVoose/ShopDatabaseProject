@@ -198,7 +198,28 @@ namespace ShopDB
 
                 //Use parameterized query to prevent SQL injection attacks
                 insertCommand.CommandText = " UPDATE User SET fName = @n WHERE rowid = (@entry);";
-                insertCommand.Parameters.AddWithValue("@n", rowID);
+                insertCommand.Parameters.AddWithValue("@n", name);
+                insertCommand.Parameters.AddWithValue("@entry", rowID);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
+        }
+
+        public static void updateLastname(string name, string rowID)
+        {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = " UPDATE User SET lName = @n WHERE rowid = (@entry);";
+                insertCommand.Parameters.AddWithValue("@n", name);
                 insertCommand.Parameters.AddWithValue("@entry", rowID);
 
                 insertCommand.ExecuteReader();
@@ -371,6 +392,45 @@ namespace ShopDB
                 db.Close();
             }
             return entries;
+        }
+
+        public static void addCertification(string UID, string MID) {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = "INSERT INTO Certified VALUES (@u, @m, datetime('now'));";
+                insertCommand.Parameters.AddWithValue("@u", UID);
+                insertCommand.Parameters.AddWithValue("@m", MID);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
+        }
+
+        public static void deleteCertification(string RID) {
+            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
+            using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
+            {
+                db.Open();
+                SqliteCommand insertCommand = new SqliteCommand();
+
+                insertCommand.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand.CommandText = "DELETE FROM Certified WHERE rowid = (@r); ";
+                insertCommand.Parameters.AddWithValue("@r", RID);
+
+                insertCommand.ExecuteReader();
+
+                db.Close();
+            }
         }
 
         public static void reCertify(string input) {

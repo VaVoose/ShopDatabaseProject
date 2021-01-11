@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,6 +25,11 @@ namespace ShopDB
     {
 
         private string userIDEditing;
+        private ObservableCollection<Machines> machineList;
+        private List<String> machineNameList = new List<String>();
+        private List<String> machineIDList = new List<String>();
+        private String selectedMachine;
+   
         public UserEditPage()
         {
             this.InitializeComponent();
@@ -39,6 +45,11 @@ namespace ShopDB
         private void setInfo(string r) {
             UsersCertOutput.ItemsSource = DataAccess.GetUserCeritications(r);
             UsersEditInfoOutput.ItemsSource = DataAccess.GetUserEditInfo(r);
+            machineList = DataAccess.GetMachineList();
+            foreach (var m in machineList) {
+                machineIDList.Add(m.recordID);
+                machineNameList.Add(m.machineName);
+            }
         }
 
         private void Back(object sender, RoutedEventArgs e) {
@@ -54,14 +65,39 @@ namespace ShopDB
         }
 
         private void deleteCert(object sender, RoutedEventArgs e) {
-            return;
+            var itemDataContext = (sender as FrameworkElement).DataContext;
+            string rowID = itemDataContext.ToString();
+            DataAccess.deleteCertification(rowID);
+            setInfo(userIDEditing);
         }
 
         private void updateFirstName(object sender, RoutedEventArgs e) {
             var itemDataContext = (sender as FrameworkElement).DataContext;
+            var itemText = (sender as TextBox).Text;
             string rowID = itemDataContext.ToString();
-            //DataAccess.updateFirstName( rowID);
-            return;
+            string newName = itemText.ToString();
+            //btnhi.Content = rowID + " " + newName;
+            DataAccess.updateFirstname(newName, rowID);
+        }
+
+        private void updateLastName(object sender, RoutedEventArgs e) {
+            var itemDataContext = (sender as FrameworkElement).DataContext;
+            var itemText = (sender as TextBox).Text;
+            string rowID = itemDataContext.ToString();
+            string newName = itemText.ToString();
+            //btnhi.Content = rowID + " " + newName;
+            DataAccess.updateLastname(newName, rowID);
+        }
+
+        private void selectMachine(object sender, SelectionChangedEventArgs e) {
+            selectedMachine = e.AddedItems[0].ToString();
+        }
+
+        private void Add(object sender, RoutedEventArgs e) {
+            if (cboMachines.SelectedIndex != -1) {
+                DataAccess.addCertification(userIDEditing.ToString(), machineIDList[cboMachines.SelectedIndex].ToString());
+                setInfo(userIDEditing);
+            }
         }
     }
 }

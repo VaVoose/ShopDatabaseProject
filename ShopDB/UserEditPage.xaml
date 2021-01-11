@@ -11,14 +11,18 @@
     <Grid>
         <StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Name="btnhi" Click="Back" Content="Back"  VerticalAlignment="Top" />
+                <Button Name="btnBack" Click="Back" Content="Back"  VerticalAlignment="Top" />
+                <ComboBox Name="cboMachines" PlaceholderText="Select Machine" Width="300" ItemsSource="{x:Bind machineNameList}" SelectionChanged="selectMachine" />
+                <Button Name="btnAdd" Click="Add" Content="Add Selected Machine"  VerticalAlignment="Top" />
             </StackPanel>
             <ListView Name="UsersEditInfoOutput">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:UserEditInfo">
                         <StackPanel Orientation="Horizontal">
-                            <TextBox x:Name="firstname" Text="{x:Bind firstName}" LostFocus="updateFirstName" />
-                            <TextBox x:Name="lastname" Text="{x:Bind lastName}" />
+                            <TextBlock Text="Firstname: " />
+                            <TextBox x:Name="firstname" Text="{x:Bind firstName}" DataContext="{x:Bind rowID }" LostFocus="updateFirstName" />
+                            <TextBlock Text="Lastname: " />
+                            <TextBox x:Name="lastname" Text="{x:Bind lastName}" DataContext="{x:Bind rowID }" LostFocus="updateLastName"/>
                             
                         </StackPanel>
                     </DataTemplate>

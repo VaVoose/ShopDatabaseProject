@@ -69,6 +69,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Text" />
+      <RootProperty Name="DataContext" />
       <RootProperty Name="PlaceholderText" />
       <RootEvent Name="LostFocus" />
     </RootType>
@@ -90,6 +91,13 @@
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="ShopDB.UserCertPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="ItemsSource" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
     <RootType FullName="ShopDB.UserEditPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="Name" />
