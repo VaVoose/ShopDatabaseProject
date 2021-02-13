@@ -44,6 +44,7 @@ namespace ShopDB
         }
 
         private void Add(object sender, RoutedEventArgs e) {
+
             this.Frame.Navigate(typeof(NewUserPage), txtNewUserID.Text);
         }
 
@@ -57,8 +58,10 @@ namespace ShopDB
 
         private void changeAdmin(object sender, RoutedEventArgs e) {
             var itemDataContext = (sender as FrameworkElement).DataContext;
-            string rowID = itemDataContext.ToString();
-            DataAccess.changeAdmin(rowID);
+            string userID = itemDataContext.ToString();
+            if (userID != CurrentUser.id) {
+                DataAccess.changeAdmin(userID);
+            }
             refreshGrid();
         }
 

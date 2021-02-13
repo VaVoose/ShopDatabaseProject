@@ -127,7 +127,7 @@ namespace ShopDB
         /**
          * Demo function to show how to add data to a table using C# and sqlite
          */
-        public static void AddMachine(string inputText) {
+        public static Boolean AddMachine(string inputText) {
             string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
             using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}")) {
                 db.Open();
@@ -138,14 +138,15 @@ namespace ShopDB
                 //Use parameterized query to prevent SQL injection attacks
                 insertCommand.CommandText = "INSERT INTO Machine(machineName) VALUES (@entry);";
                 insertCommand.Parameters.AddWithValue("@entry", inputText);
-
-                insertCommand.ExecuteReader();
+                try { insertCommand.ExecuteReader(); }
+                catch { db.Close(); return false; }
 
                 db.Close();
+                return true;
             }
         }
 
-        public static void CreateNewUser(string userID, string firstname, string lastname)
+        public static Boolean CreateNewUser(string userID, string firstname, string lastname)
         {
             string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
             using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
@@ -160,10 +161,14 @@ namespace ShopDB
                 insertCommand.Parameters.AddWithValue("@userid", userID);
                 insertCommand.Parameters.AddWithValue("@fname", firstname);
                 insertCommand.Parameters.AddWithValue("@lname", lastname);
-
-                insertCommand.ExecuteReader();
-
+                try { insertCommand.ExecuteReader(); }
+                catch {
+                    db.Close();
+                    return false;
+                }
+                
                 db.Close();
+                return true;
             }
         }
 
@@ -177,7 +182,7 @@ namespace ShopDB
                 insertCommand.Connection = db;
 
                 //Use parameterized query to prevent SQL injection attacks
-                insertCommand.CommandText = " UPDATE User SET isAdmin = ~isAdmin WHERE rowid = (@entry);";
+                insertCommand.CommandText = " UPDATE User SET isAdmin = ~isAdmin WHERE userID = (@entry);";
                 insertCommand.Parameters.AddWithValue("@entry", inputText);
 
                 insertCommand.ExecuteReader();
@@ -244,6 +249,14 @@ namespace ShopDB
 
                 insertCommand.ExecuteReader();
 
+                SqliteCommand insertCommand2 = new SqliteCommand();
+                insertCommand2.Connection = db;
+                insertCommand2.CommandText = "DELETE FROM Certified WHERE machineID = (@entry);";
+                insertCommand2.Parameters.AddWithValue("@entry", inputText);
+
+                insertCommand2.ExecuteReader();
+
+
                 db.Close();
             }
         }
@@ -258,10 +271,21 @@ namespace ShopDB
                 insertCommand.Connection = db;
 
                 //Use parameterized query to prevent SQL injection attacks
-                insertCommand.CommandText = "DELETE FROM User WHERE rowid = (@entry);";
+                insertCommand.CommandText = "DELETE FROM User WHERE userID = (@entry);";
                 insertCommand.Parameters.AddWithValue("@entry", inputText);
 
                 insertCommand.ExecuteReader();
+
+
+                SqliteCommand insertCommand2 = new SqliteCommand();
+
+                insertCommand2.Connection = db;
+
+                //Use parameterized query to prevent SQL injection attacks
+                insertCommand2.CommandText = "DELETE FROM Certified WHERE userID = (@entry);";
+                insertCommand2.Parameters.AddWithValue("@entry", inputText);
+
+                insertCommand2.ExecuteReader();
 
                 db.Close();
             }
@@ -394,7 +418,7 @@ namespace ShopDB
             return entries;
         }
 
-        public static void addCertification(string UID, string MID) {
+        public static Boolean addCertification(string UID, string MID) {
             string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
             using (SqliteConnection db = new SqliteConnection($"Filename={dbpath}"))
             {
@@ -407,10 +431,14 @@ namespace ShopDB
                 insertCommand.CommandText = "INSERT INTO Certified VALUES (@u, @m, datetime('now'));";
                 insertCommand.Parameters.AddWithValue("@u", UID);
                 insertCommand.Parameters.AddWithValue("@m", MID);
-
-                insertCommand.ExecuteReader();
-
+                try { insertCommand.ExecuteReader(); }
+                catch {
+                    db.Close();
+                    return false;
+                }
+                
                 db.Close();
+                return true;
             }
         }
 

@@ -30,9 +30,9 @@
                             <TextBlock x:ConnectionId='6' Name="lastName" 
                                                                
                                        Width="200"/>
-                            <CheckBox x:ConnectionId='7' Name="chkIsAdmin"                                                                              />
+                            <CheckBox x:ConnectionId='7' Name="chkIsAdmin"                                                                               />
                             <Button x:ConnectionId='8'                                                Content="Edit User Certs"/>
-                            <Button x:ConnectionId='9'                                                 Content="Delete"/>
+                            <Button x:ConnectionId='9'                                                  Content="Delete"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

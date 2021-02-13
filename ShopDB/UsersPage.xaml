@@ -30,9 +30,9 @@
                             <TextBlock Name="lastName" 
                                        Text="{x:Bind lastName}"
                                        Width="200"/>
-                            <CheckBox Name="chkIsAdmin" IsChecked="{x:Bind isAdmin}" Click="changeAdmin" DataContext="{x:Bind rowID}"/>
+                            <CheckBox Name="chkIsAdmin" IsChecked="{x:Bind isAdmin}" Click="changeAdmin" DataContext="{x:Bind userID}"/>
                             <Button Click="editUser" DataContext="{x:Bind userID}" Content="Edit User Certs"/>
-                            <Button Click="deleteUser" DataContext="{x:Bind rowID}" Content="Delete"/>
+                            <Button Click="deleteUser" DataContext="{x:Bind userID}" Content="Delete"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

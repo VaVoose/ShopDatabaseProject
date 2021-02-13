@@ -36,10 +36,13 @@ namespace ShopDB
         private void AddMachine(object sender, RoutedEventArgs e)
         {
             if (txtNewMachineName.Text != "") {
-                DataAccess.AddMachine(txtNewMachineName.Text);
-                refreshGrid();
+                if (DataAccess.AddMachine(txtNewMachineName.Text)) {
+                    refreshGrid();
+                    txtNewMachineName.Text = "";
+                    return;
+                }
+                txtNewMachineName.Text = "No Duplicate Machine Names";
             }
-            txtNewMachineName.Text = "";
         }
 
         private void Back(object sender, RoutedEventArgs e)

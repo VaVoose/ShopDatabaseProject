@@ -40,13 +40,19 @@ namespace ShopDB
             base.OnNavigatedTo(e);
             userIDEditing = (e.Parameter).ToString(); // get parameter
             setInfo(userIDEditing);
+            setMachineList();
         }
 
         private void setInfo(string r) {
             UsersCertOutput.ItemsSource = DataAccess.GetUserCeritications(r);
             UsersEditInfoOutput.ItemsSource = DataAccess.GetUserEditInfo(r);
+            
+        }
+
+        private void setMachineList() {
             machineList = DataAccess.GetMachineList();
-            foreach (var m in machineList) {
+            foreach (var m in machineList)
+            {
                 machineIDList.Add(m.recordID);
                 machineNameList.Add(m.machineName);
             }
@@ -95,8 +101,10 @@ namespace ShopDB
 
         private void Add(object sender, RoutedEventArgs e) {
             if (cboMachines.SelectedIndex != -1) {
-                DataAccess.addCertification(userIDEditing.ToString(), machineIDList[cboMachines.SelectedIndex].ToString());
-                setInfo(userIDEditing);
+                if (DataAccess.addCertification(userIDEditing.ToString(), machineIDList[cboMachines.SelectedIndex].ToString()))
+                {
+                    setInfo(userIDEditing);
+                }
             }
         }
     }

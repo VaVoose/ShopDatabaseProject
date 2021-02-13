@@ -45,11 +45,17 @@ namespace ShopDB
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            DataAccess.CreateNewUser(userID, txtFirstName.Text, txtLastName.Text);
-            if (DataAccess.GetUserInfo(userID))
+            if (DataAccess.CreateNewUser(userID, txtFirstName.Text, txtLastName.Text))
             {
-                this.Frame.Navigate(typeof(UserCertPage));
+                if (DataAccess.GetUserInfo(userID))
+                {
+                    this.Frame.Navigate(typeof(UserCertPage));
+                }
             }
+            else {
+                tbUserID.Text = "FAILED: ID is not unique";
+            }
+            
         }
     }
 }
