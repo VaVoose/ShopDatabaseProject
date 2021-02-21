@@ -40,6 +40,10 @@ namespace ShopDB
             DataAccess.BackupDatabase();
         }
 
+        private void RestoreDatabase(object sender, RoutedEventArgs e) {
+            DataAccess.RestoreDatabase();
+        }
+
         private void MainMenu(object sender, RoutedEventArgs e)
         {
             CurrentUser.Reset();

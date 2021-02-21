@@ -20,9 +20,9 @@ namespace ShopDB
         
 
         public async static void BackupDatabase() {
-            
-            string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "machineCerts.db");
 
+            StorageFile dbFile = await ApplicationData.Current.LocalFolder.GetFileAsync("machineCerts.db");
+            
             var folderPicker = new FolderPicker();
             folderPicker.SuggestedStartLocation = PickerLocationId.Desktop;
             folderPicker.FileTypeFilter.Add("*");
@@ -34,17 +34,37 @@ namespace ShopDB
                 // (including other sub-folder contents)
                 Windows.Storage.AccessCache.StorageApplicationPermissions.
                 FutureAccessList.AddOrReplace("PickedFolderToken", folder);
-                string backupPath = Path.Combine(folder.Path, "machineCerts-" + DateTime.UtcNow.Date.ToString("MM-dd-yyyy") + ".bk.db");
-                File.Copy(dbpath, backupPath);
+
+                StorageFile newFile = await folder.CreateFileAsync("tempbackup.bk");
+                await dbFile.CopyAndReplaceAsync(newFile);
+
+                await newFile.RenameAsync("machineCerts-" + DateTime.UtcNow.Date.ToString("MM-dd-yyyy") + "db.bk", NameCollisionOption.ReplaceExisting);
 
             }
             else
             {
                 Console.WriteLine("It didn't work");
             }
+            
+        }
 
-            //string backupPath = Path.Combine(@"C:\Users\Dominic\Desktop\dbBackups\", "machineCerts-" + DateTime.UtcNow.Date.ToString("dd-MM-yyyy") + ".bk.db" );
-            //File.Copy(dbpath, backupPath);
+        public async static void RestoreDatabase() {
+            StorageFile oldDBFile = await ApplicationData.Current.LocalFolder.GetFileAsync("machineCerts.db");
+
+            var filePicker = new FileOpenPicker();
+            filePicker.SuggestedStartLocation = PickerLocationId.Desktop;
+            filePicker.FileTypeFilter.Add(".bk");
+            StorageFile newDBFile = await filePicker.PickSingleFileAsync();
+
+            if (newDBFile != null)
+            {
+                await newDBFile.CopyAndReplaceAsync(oldDBFile);
+                //File.Move(newDBFile, oldDBFile);
+            }
+            else {
+                Console.WriteLine("It didnt work");
+            }
+
         }
 
         /*
