@@ -9,8 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
                 <Button Name="btnBack" Click="Back" Content="Back"  VerticalAlignment="Top" />
                 <ComboBox Name="cboMachines" PlaceholderText="Select Machine" Width="300" ItemsSource="{x:Bind machineNameList}" SelectionChanged="selectMachine" />
                 <Button Name="btnAdd" Click="Add" Content="Add Selected Machine"  VerticalAlignment="Top" />
@@ -19,10 +19,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:UserEditInfo">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Firstname: " />
-                            <TextBox x:Name="firstname" Text="{x:Bind firstName}" DataContext="{x:Bind rowID }" LostFocus="updateFirstName" />
-                            <TextBlock Text="Lastname: " />
-                            <TextBox x:Name="lastname" Text="{x:Bind lastName}" DataContext="{x:Bind rowID }" LostFocus="updateLastName"/>
+                            <!--<TextBlock Text="Firstname: " />-->
+                            <TextBox x:Name="firstname" Header="Edit First Name" Margin="20" Text="{x:Bind firstName}" DataContext="{x:Bind rowID }" MinWidth="170" LostFocus="updateFirstName" />
+                            <!--<TextBlock Text="Lastname: " />-->
+                            <TextBox x:Name="lastname" Header="Edit Last Name" Margin="20" Text="{x:Bind lastName}" DataContext="{x:Bind rowID }" MinWidth="170" LostFocus="updateLastName"/>
                             
                         </StackPanel>
                     </DataTemplate>

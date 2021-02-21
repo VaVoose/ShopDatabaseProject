@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,6 +23,9 @@ namespace ShopDB
     /// </summary>
     public sealed partial class MachinesPage : Page
     {
+        private IList<Machines> MachineList;
+        private ObservableCollection<Machines> Machines;
+
         public MachinesPage()
         {
             this.InitializeComponent();
@@ -30,7 +34,11 @@ namespace ShopDB
 
         private void refreshGrid()
         {
-            MachinesOutput.ItemsSource = DataAccess.GetMachineList();
+            Machines = DataAccess.GetMachineList();
+
+            MachinesOutput.ItemsSource = Machines;
+
+            MachineList = new List<Machines>(Machines);
         }
 
         private void AddMachine(object sender, RoutedEventArgs e)
@@ -55,6 +63,31 @@ namespace ShopDB
             string recordID = itemDataContext.ToString();
             DataAccess.deleteMachine(recordID);
             refreshGrid();
+        }
+
+        private void machineFilterChanged(object sender, TextChangedEventArgs e)
+        {
+            List<Machines> TempFiltered;
+
+            TempFiltered = MachineList.Where(contact => contact.machineName.Contains(FilterByMachineName.Text, StringComparison.InvariantCultureIgnoreCase)).ToList();
+
+            for (int i = Machines.Count - 1; i >= 0; i--)
+            {
+                var item = Machines[i];
+                if (!TempFiltered.Contains(item))
+                {
+                    Machines.Remove(item);
+                }
+            }
+
+            foreach (var item in TempFiltered)
+            {
+                if (!Machines.Contains(item))
+                {
+                    Machines.Add(item);
+                }
+            }
+
         }
     }
 }

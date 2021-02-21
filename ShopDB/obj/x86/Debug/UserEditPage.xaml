@@ -9,8 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
                 <Button x:ConnectionId='12' Name="btnBack"              Content="Back"  VerticalAlignment="Top" />
                 <ComboBox x:ConnectionId='13' Name="cboMachines" PlaceholderText="Select Machine" Width="300"                                                                         />
                 <Button x:ConnectionId='14' Name="btnAdd"             Content="Add Selected Machine"  VerticalAlignment="Top" />
@@ -19,10 +19,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate                                >
                         <StackPanel x:ConnectionId='9' Orientation="Horizontal">
-                            <TextBlock Text="Firstname: " />
-                            <TextBox x:ConnectionId='10' x:Name="firstname"                                                                                     />
-                            <TextBlock Text="Lastname: " />
-                            <TextBox x:ConnectionId='11' x:Name="lastname"                                                                                  />
+                            <!--<TextBlock Text="Firstname: " />-->
+                            <TextBox x:ConnectionId='10' x:Name="firstname" Header="Edit First Name" Margin="20"                                                         MinWidth="170"                             />
+                            <!--<TextBlock Text="Lastname: " />-->
+                            <TextBox x:ConnectionId='11' x:Name="lastname" Header="Edit Last Name" Margin="20"                                                        MinWidth="170"                           />
                             
                         </StackPanel>
                     </DataTemplate>

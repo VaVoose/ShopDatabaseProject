@@ -7,41 +7,40 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="Black">
-
+    <!--
     <Page.Resources>
         <Style x:Key="textBlockStyle" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="OrangeRed" />
             <Setter Property="FontFamily" Value="Consolas" />
             <Setter Property="FontWeight" Value="ExtraBold" />
             <Setter Property="FontSize" Value="36" />
             <Setter Property="HorizontalAlignment" Value="Center" />
         </Style>
     </Page.Resources>
+    -->
 
-    <Grid HorizontalAlignment="Center" Margin="0,50,0,0">
+    <Grid HorizontalAlignment="Center" Margin="0,20,0,0">
         <StackPanel Orientation="Vertical">
-            <Grid Width="750" Margin="0,0,0,20">
-                <TextBlock HorizontalAlignment="Left" Text="Current User : " FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
-                
-                
-                <!--ADD FIRST + LAST NAME HERE THROUGH BINDING-->
-                <TextBlock x:Name="txtName" HorizontalAlignment="Right" Text="Insert Name Here" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
-                
-            </Grid>
+
+            <Button Click="MainMenu">Back</Button>
+            <TextBlock x:Name="txtName" HorizontalAlignment="Center" Text="Insert Name Here" Margin="20"/>
+
+
             <StackPanel>
                 <ListView>
                     <ListView.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" >
+                                <!--
                                 <StackPanel.Resources>
                                     <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
                                 </StackPanel.Resources>
-
+                                
                                 <TextBlock Text="Record ID" Width="250" FontFamily="Consolas" />
                                 <TextBlock Text="User ID" Width="250" FontFamily="Consolas" />
                                 <TextBlock Text="Machine ID" Width="300" FontFamily="Consolas" />
-                                <TextBlock Text="Machine Name" Width="400" FontFamily="Consolas" />
-                                <TextBlock Text="Date Certified" Width="350" FontFamily="Consolas" />
+                                -->
+                                <TextBlock Text="Machine Name" Width="400" />
+                                <TextBlock Text="Date Certified" Width="450" />
 
                             </StackPanel>
                         </DataTemplate>
@@ -51,10 +50,11 @@
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="local:UserCerts">
                             <StackPanel Orientation="Horizontal">
+                                <!--
                                 <StackPanel.Resources>
                                     <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
                                 </StackPanel.Resources>
-
+                                
                                 <TextBlock Name="RecordID" 
                                        Text="{x:Bind recordID}"
                                        Width="250" />
@@ -64,18 +64,19 @@
                                 <TextBlock Name="MachineID" 
                                        Text="{x:Bind machineID}"
                                        Width="300"/>
+                                -->
                                 <TextBlock Name="Machine Name" 
                                        Text="{x:Bind machineName}"
                                        Width="400"/>
                                 <TextBlock Name ="DateCertified" 
                                        Text="{x:Bind certDate}"
-                                       Width="350"/>
+                                       Width="450"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
 
                 </ListView>
-                <Button Click="MainMenu">Back</Button>
+                
             </StackPanel>
         </StackPanel>
     </Grid>

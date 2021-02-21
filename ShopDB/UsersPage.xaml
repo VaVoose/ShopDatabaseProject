@@ -9,27 +9,29 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
                 <Button Click="Back" Content="Back"  VerticalAlignment="Top" />
-                <TextBox Name="txtNewUserID" PlaceholderText="New User ID"></TextBox>
+                <TextBox Name="txtNewUserID" Width="300" PlaceholderText="New User ID"></TextBox>
                 <Button Click="Add" Content="Add User"  VerticalAlignment="Top" />
             </StackPanel>
-            <ListView Name="UsersOutput">
+            <TextBox x:Name="FilterByLName" Header="Last Name Search" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20"
+             TextChanged="lastNameFilterChanged"/>
+            <ListView Name="UsersOutput" >
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:UserList">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Name="userID" 
                                        Text="{x:Bind userID}"
-                                       Width="80"
+                                       Width="100"
                                        Margin="0,0"/>
                             <TextBlock Name="firstName" 
                                        Text="{x:Bind firstName}"
-                                       Width="80"
+                                       Width="180"
                                        Margin="0,0"/>
                             <TextBlock Name="lastName" 
                                        Text="{x:Bind lastName}"
-                                       Width="200"/>
+                                       Width="190"/>
                             <CheckBox Name="chkIsAdmin" IsChecked="{x:Bind isAdmin}" Click="changeAdmin" DataContext="{x:Bind userID}"/>
                             <Button Click="editUser" DataContext="{x:Bind userID}" Content="Edit User Certs"/>
                             <Button Click="deleteUser" DataContext="{x:Bind userID}" Content="Delete"/>

@@ -9,24 +9,27 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
                 <Button Click="Back" Content="Back"  VerticalAlignment="Top" />
-                <TextBox Name="txtNewMachineName"></TextBox>
-                <Button Click="AddMachine" Content="Add Machine"  VerticalAlignment="Top" />
+                <TextBox Name="txtNewMachineName" Width="300"></TextBox>
+                <Button Click="AddMachine" Content="Add Machine" VerticalAlignment="Top" />
             </StackPanel>
-            
+            <TextBox x:Name="FilterByMachineName" Header="Machine Name Search" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20"
+             TextChanged="machineFilterChanged"/>
             <ListView Name="MachinesOutput">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:Machines">
                         <StackPanel Orientation="Horizontal">
+                            <!--
                             <TextBlock Name="RecordID" 
                                        Text="{x:Bind recordID}"
                                        Width="80"
                                        Margin="0,0"/>
+                            -->
                             <TextBlock Name="MachineName" 
                                        Text="{x:Bind machineName}"
-                                       Width="200"/>
+                                       MinWidth="900"/>
                             <Button Click="deleteMachine" DataContext="{x:Bind recordID}" Content="Delete"/>
                         </StackPanel>
                     </DataTemplate>

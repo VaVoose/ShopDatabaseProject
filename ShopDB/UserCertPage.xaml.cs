@@ -29,7 +29,7 @@ namespace ShopDB
         {
             this.InitializeComponent();
 
-            txtName.Text = CurrentUser.firstname + " " + CurrentUser.lastname;
+            txtName.Text = "Current User: " + CurrentUser.firstname + " " + CurrentUser.lastname + " - " + CurrentUser.id ;
             UserCertOutput.ItemsSource = DataAccess.GetUserCeritications(CurrentUser.id);
 
         }

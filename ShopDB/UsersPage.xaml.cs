@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,6 +23,9 @@ namespace ShopDB
     /// </summary>
     public sealed partial class UsersPage : Page
     {
+        private IList<UserList> UserList;
+        private ObservableCollection<UserList> Users;
+
         public UsersPage()
         {
             this.InitializeComponent();
@@ -29,7 +33,13 @@ namespace ShopDB
         }
 
         private void refreshGrid() {
-            UsersOutput.ItemsSource = DataAccess.GetUserList();
+
+            Users = DataAccess.GetUserList();
+
+
+            UsersOutput.ItemsSource = Users;
+
+            UserList = new List<UserList>(Users);
         }
 
         private void Back(object sender, RoutedEventArgs e)
@@ -63,6 +73,30 @@ namespace ShopDB
                 DataAccess.changeAdmin(userID);
             }
             refreshGrid();
+        }
+        
+        private void lastNameFilterChanged(object sender, TextChangedEventArgs e) {
+            List<UserList> TempFiltered;
+
+            TempFiltered = UserList.Where(contact => contact.lastName.Contains(FilterByLName.Text, StringComparison.InvariantCultureIgnoreCase)).ToList();
+
+            for (int i = Users.Count - 1; i >= 0; i--)
+            {
+                var item = Users[i];
+                if (!TempFiltered.Contains(item))
+                {
+                    Users.Remove(item);
+                }
+            }
+
+            foreach (var item in TempFiltered)
+            {
+                if (!Users.Contains(item))
+                {
+                    Users.Add(item);
+                }
+            }
+
         }
 
     }

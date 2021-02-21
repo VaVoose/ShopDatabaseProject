@@ -9,30 +9,32 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:ConnectionId='10'              Content="Back"  VerticalAlignment="Top" />
-                <TextBox x:ConnectionId='11' Name="txtNewUserID" PlaceholderText="New User ID"></TextBox>
-                <Button x:ConnectionId='12'             Content="Add User"  VerticalAlignment="Top" />
+        <StackPanel HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+                <Button x:ConnectionId='11'              Content="Back"  VerticalAlignment="Top" />
+                <TextBox x:ConnectionId='12' Name="txtNewUserID" Width="300" PlaceholderText="New User ID"></TextBox>
+                <Button x:ConnectionId='13'             Content="Add User"  VerticalAlignment="Top" />
             </StackPanel>
-            <ListView x:ConnectionId='2' Name="UsersOutput">
+            <TextBox x:ConnectionId='2' x:Name="FilterByLName" Header="Last Name Search" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20"
+                                                />
+            <ListView x:ConnectionId='3' Name="UsersOutput" >
                 <ListView.ItemTemplate>
                     <DataTemplate                            >
-                        <StackPanel x:ConnectionId='3' Orientation="Horizontal">
-                            <TextBlock x:ConnectionId='4' Name="userID" 
+                        <StackPanel x:ConnectionId='4' Orientation="Horizontal">
+                            <TextBlock x:ConnectionId='5' Name="userID" 
                                                              
-                                       Width="80"
+                                       Width="100"
                                        Margin="0,0"/>
-                            <TextBlock x:ConnectionId='5' Name="firstName" 
+                            <TextBlock x:ConnectionId='6' Name="firstName" 
                                                                 
-                                       Width="80"
+                                       Width="180"
                                        Margin="0,0"/>
-                            <TextBlock x:ConnectionId='6' Name="lastName" 
+                            <TextBlock x:ConnectionId='7' Name="lastName" 
                                                                
-                                       Width="200"/>
-                            <CheckBox x:ConnectionId='7' Name="chkIsAdmin"                                                                               />
-                            <Button x:ConnectionId='8'                                                Content="Edit User Certs"/>
-                            <Button x:ConnectionId='9'                                                  Content="Delete"/>
+                                       Width="190"/>
+                            <CheckBox x:ConnectionId='8' Name="chkIsAdmin"                                                                               />
+                            <Button x:ConnectionId='9'                                                Content="Edit User Certs"/>
+                            <Button x:ConnectionId='10'                                                  Content="Delete"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

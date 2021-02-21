@@ -7,75 +7,76 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="Black">
-
+    <!--
     <Page.Resources>
         <Style x:Key="textBlockStyle" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="OrangeRed" />
             <Setter Property="FontFamily" Value="Consolas" />
             <Setter Property="FontWeight" Value="ExtraBold" />
             <Setter Property="FontSize" Value="36" />
             <Setter Property="HorizontalAlignment" Value="Center" />
         </Style>
     </Page.Resources>
+    -->
 
-    <Grid HorizontalAlignment="Center" Margin="0,50,0,0">
+    <Grid HorizontalAlignment="Center" Margin="0,20,0,0">
         <StackPanel Orientation="Vertical">
-            <Grid Width="750" Margin="0,0,0,20">
-                <TextBlock HorizontalAlignment="Left" Text="Current User : " FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
-                
-                
-                <!--ADD FIRST + LAST NAME HERE THROUGH BINDING-->
-                <TextBlock x:ConnectionId='11' x:Name="txtName" HorizontalAlignment="Right" Text="Insert Name Here" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="White" FontSize="40"/>
-                
-            </Grid>
+
+            <Button x:ConnectionId='2'                 >Back</Button>
+            <TextBlock x:ConnectionId='3' x:Name="txtName" HorizontalAlignment="Center" Text="Insert Name Here" Margin="20"/>
+
+
             <StackPanel>
                 <ListView>
                     <ListView.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" >
+                                <!--
                                 <StackPanel.Resources>
                                     <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
                                 </StackPanel.Resources>
-
+                                
                                 <TextBlock Text="Record ID" Width="250" FontFamily="Consolas" />
                                 <TextBlock Text="User ID" Width="250" FontFamily="Consolas" />
                                 <TextBlock Text="Machine ID" Width="300" FontFamily="Consolas" />
-                                <TextBlock Text="Machine Name" Width="400" FontFamily="Consolas" />
-                                <TextBlock Text="Date Certified" Width="350" FontFamily="Consolas" />
+                                -->
+                                <TextBlock Text="Machine Name" Width="400" />
+                                <TextBlock Text="Date Certified" Width="450" />
 
                             </StackPanel>
                         </DataTemplate>
                     </ListView.HeaderTemplate>
                 </ListView>
-                <ListView x:ConnectionId='2' Name="UserCertOutput">
+                <ListView x:ConnectionId='4' Name="UserCertOutput">
                     <ListView.ItemTemplate>
                         <DataTemplate                             >
-                            <StackPanel x:ConnectionId='4' Orientation="Horizontal">
+                            <StackPanel x:ConnectionId='5' Orientation="Horizontal">
+                                <!--
                                 <StackPanel.Resources>
                                     <Style BasedOn="{StaticResource textBlockStyle}" TargetType="TextBlock" />
                                 </StackPanel.Resources>
-
-                                <TextBlock x:ConnectionId='5' Name="RecordID" 
-                                                               
+                                
+                                <TextBlock Name="RecordID" 
+                                       Text="{x:Bind recordID}"
                                        Width="250" />
-                                <TextBlock x:ConnectionId='6' Name="UserID" 
-                                                             
+                                <TextBlock Name="UserID" 
+                                       Text="{x:Bind userID}"
                                        Width="250"/>
-                                <TextBlock x:ConnectionId='7' Name="MachineID" 
-                                                                
+                                <TextBlock Name="MachineID" 
+                                       Text="{x:Bind machineID}"
                                        Width="300"/>
-                                <TextBlock x:ConnectionId='8' Name="Machine Name" 
+                                -->
+                                <TextBlock x:ConnectionId='6' Name="Machine Name" 
                                                                   
                                        Width="400"/>
-                                <TextBlock x:ConnectionId='9' Name ="DateCertified" 
+                                <TextBlock x:ConnectionId='7' Name ="DateCertified" 
                                                                
-                                       Width="350"/>
+                                       Width="450"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
 
                 </ListView>
-                <Button x:ConnectionId='3'                 >Back</Button>
+                
             </StackPanel>
         </StackPanel>
     </Grid>
