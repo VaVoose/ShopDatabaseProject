@@ -37,7 +37,7 @@ namespace ShopDB
             Users = DataAccess.GetUserList();
 
 
-            UsersOutput.ItemsSource = Users;
+            UsersOutput.ItemsSource = Users.OrderBy(user => user.lastName);
 
             UserList = new List<UserList>(Users);
         }
