@@ -121,7 +121,7 @@
     <value>Cannot convert object of type '{sourceType}' to object of type '{targetType}'.</value>
   </data>
   <data name="EncryptionNotSupported" xml:space="preserve">
-    <value>You specified a password in the connection string, but the native SQLite library you're using doesn't support encryption.</value>
+    <value>You specified a password in the connection string, but the native SQLite library '{libraryName}' doesn't support encryption.</value>
   </data>
   <data name="ConnectionStringRequiresClosedConnection" xml:space="preserve">
     <value>ConnectionString cannot be set when the connection is open.</value>
@@ -136,7 +136,7 @@
     <value>Cannot bind the value for parameter '{parameterName}' because multiple matching parameters were found in the command text. Specify the parameter name with the symbol prefix, e.g. '@{parameterName}'.</value>
   </data>
   <data name="InvalidIsolationLevel" xml:space="preserve">
-    <value>The IsolationLevel '{isolationLevel}' is invalid.</value>
+    <value>The IsolationLevel '{isolationLevel}' is not supported.</value>
   </data>
   <data name="ParameterNotFound" xml:space="preserve">
     <value>A SqliteParameter with ParameterName '{parameterName}' is not contained by this SqliteParameterCollection.</value>
@@ -157,7 +157,7 @@
     <value>Offset and count were out of bounds for the buffer.</value>
   </data>
   <data name="KeywordNotSupported" xml:space="preserve">
-    <value>Keyword not supported: '{keyword}'.</value>
+    <value>Connection string keyword '{keyword}' is not supported. For a possible alternative, see https://go.microsoft.com/fwlink/?linkid=2142181.</value>
   </data>
   <data name="UDFCalledWithNull" xml:space="preserve">
     <value>The SQL function '{function}' was called with a NULL argument at ordinal {ordinal}. Create the function using a Nullable parameter or rewrite your query to avoid passing NULL.</value>
@@ -169,7 +169,7 @@
     <value>SQLite Error {errorCode}: '{message}'.</value>
   </data>
   <data name="InvalidParameterDirection" xml:space="preserve">
-    <value>The ParameterDirection '{direction}' is invalid.</value>
+    <value>The ParameterDirection '{direction}' is not supported.</value>
   </data>
   <data name="CannotStoreNaN" xml:space="preserve">
     <value>Cannot store 'NaN' values.</value>
@@ -187,10 +187,10 @@
     <value>The size of a blob may not be changed by the SqliteBlob API. Use an UPDATE command instead.</value>
   </data>
   <data name="DefaultNativeError" xml:space="preserve">
-    <value>For more information on this error code see http://sqlite.org/rescode.html</value>
+    <value>For more information on this error code see https://www.sqlite.org/rescode.html</value>
   </data>
   <data name="InvalidCommandType" xml:space="preserve">
-    <value>The CommandType '{commandType}' is invalid.</value>
+    <value>The CommandType '{commandType}' is not supported.</value>
   </data>
   <data name="RequiresSet" xml:space="preserve">
     <value>{propertyName} must be set.</value>
@@ -208,7 +208,7 @@
     <value>SqliteConnection does not support nested transactions.</value>
   </data>
   <data name="TransactionConnectionMismatch" xml:space="preserve">
-    <value>The transaction object is not associated with the connection object.</value>
+    <value>The transaction object is not associated with the same connection object as this command.</value>
   </data>
   <data name="TransactionCompleted" xml:space="preserve">
     <value>This SqliteTransaction has completed; it is no longer usable.</value>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -17,9 +18,13 @@ namespace ShopDB
 {
     public sealed partial class MainPage : Page
     {
+        private Regex rx = new Regex(@";[0-9]{11}\?");
+
         public MainPage()
         {
+            
             this.InitializeComponent();
+            
         }
 
         /**
@@ -55,6 +60,12 @@ namespace ShopDB
                 this.Frame.Navigate(typeof(NewUserPage), (txtUserInput.Text).ToString());
             }
             
+        }
+
+        private void MatchID(object sender, KeyRoutedEventArgs e) {
+            if (rx.IsMatch(txtUserInput.Text)) {
+                this.Frame.Navigate(typeof(NewUserPage), (txtUserInput.Text.Substring(1,9)).ToString());
+            }
         }
     }
 }

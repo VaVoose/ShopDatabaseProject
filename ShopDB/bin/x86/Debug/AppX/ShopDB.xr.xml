@@ -57,6 +57,7 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="PlaceholderText" />
       <RootEvent Name="TextChanged" />
+      <RootEvent Name="KeyUp" />
       <RootEvent Name="LostFocus" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
