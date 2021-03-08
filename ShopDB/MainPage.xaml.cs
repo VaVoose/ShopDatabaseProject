@@ -62,9 +62,34 @@ namespace ShopDB
             
         }
 
+        private void NextPage(object sender, RoutedEventArgs e, string id)
+        {
+            //If the user exists
+            if (DataAccess.GetUserInfo(id))
+            {
+                //If the user is not an admin, open UserCertPage
+                if (CurrentUser.isAdmin == false)
+                {
+                    this.Frame.Navigate(typeof(UserCertPage));
+                }
+                //If the user is an Admin open the admin page
+                else
+                {
+                    this.Frame.Navigate(typeof(AdminPage));
+                }
+            }
+            //If the user doesn't exist, clear the text field
+            else
+            {
+                this.Frame.Navigate(typeof(NewUserPage), id);
+            }
+
+        }
+
         private void MatchID(object sender, KeyRoutedEventArgs e) {
             if (rx.IsMatch(txtUserInput.Text)) {
-                this.Frame.Navigate(typeof(NewUserPage), (txtUserInput.Text.Substring(1,9)).ToString());
+                NextPage(sender, e, txtUserInput.Text.Substring(1,9).ToString());
+                //this.Frame.Navigate(typeof(NewUserPage), (txtUserInput.Text.Substring(1,9)).ToString());
             }
         }
     }

@@ -383,7 +383,7 @@ namespace ShopDB
                 {
                     UserList u = new UserList();
                     u.rowID = query.GetString(0);
-                    u.userID = query.GetString(1);
+                    u.userID = query.GetInt32(1).ToString("D9");
                     u.firstName = query.GetString(2);
                     u.lastName = query.GetString(3);
                     u.isAdmin = query.GetBoolean(4);
@@ -524,7 +524,7 @@ namespace ShopDB
                     SqliteDataReader query = selectCommand.ExecuteReader();
 
                     query.Read();
-                    CurrentUser.id = query.GetString(0);
+                    CurrentUser.id = query.GetInt32(0).ToString("D9");
                     CurrentUser.firstname = query.GetString(1);
                     CurrentUser.lastname = query.GetString(2);
                     CurrentUser.isAdmin = query.GetBoolean(3);
