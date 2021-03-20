@@ -45,6 +45,10 @@ namespace ShopDB
 
         private void Next(object sender, RoutedEventArgs e)
         {
+            if (String.IsNullOrEmpty(txtFirstName.Text) || String.IsNullOrEmpty(txtLastName.Text)) {
+                tbUserID.Text = "FAILED: Names are required";
+                return;
+            }
             if (DataAccess.CreateNewUser(userID, txtFirstName.Text, txtLastName.Text))
             {
                 if (DataAccess.GetUserInfo(userID))

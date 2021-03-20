@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png</Source>
+    <SmallTileSource>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png</MediumTileSource>
+    <WideTileSource>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png</WideTileSource>
+    <LargeTileSource>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png</LargeTileSource>
+    <AppIconSource>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\Resources\Polar Bear Badge.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>
