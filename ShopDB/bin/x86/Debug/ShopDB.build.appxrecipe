@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>731e2d96-8670-43b6-a4be-efb6ab16a2db</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Dominic</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Dominic Ferrante</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

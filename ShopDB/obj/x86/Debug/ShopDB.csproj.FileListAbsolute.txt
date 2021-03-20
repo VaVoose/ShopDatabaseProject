@@ -201,3 +201,4 @@ C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\MultipleQ
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758732200000000.json
 C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\ShopDB.csprojAssemblyReference.cache
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\ForBundle\AppxManifest.xml

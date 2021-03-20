@@ -1,0 +1,2 @@
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\ShopDB.csproj;x64
+C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDBPackager\ShopDBPackager.wapproj;x64

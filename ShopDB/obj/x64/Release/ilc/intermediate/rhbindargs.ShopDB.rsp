@@ -1,0 +1,16 @@
+﻿/osver:6.2
+/appcontainer
+"/runtime:mrt100_app"
+/eh:clr
+/pdb
+"/nativeLink:C:\Users\Dominic\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\x64\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\intermediate\MDIL\ShopDB.mdilexe"
+"/i:C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\intermediate\MDIL"
+"/out:C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\intermediate\Native\ShopDB.exe"
+"/pdbAltPath:C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Release\ilc"
+"/res:C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\intermediate\Native.res"
+"/i:C:\Users\Dominic\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

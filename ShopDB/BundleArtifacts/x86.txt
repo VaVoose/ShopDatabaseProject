@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Release\ShopDB_1.0.1.0_x86.appx
+SymbolPackage=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Release\Symbols\ShopDB_1.0.1.0_x86.appxsym

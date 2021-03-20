@@ -1,0 +1,11 @@
+﻿"C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\in\Microsoft.Data.Sqlite.dll"
+"C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\in\ShopDB.exe"
+"C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\in\SQLitePCLRaw.batteries_v2.dll"
+"C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\in\SQLitePCLRaw.core.dll"
+"C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\in\SQLitePCLRaw.provider.winsqlite3.dll"
+/Lib:"C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\in"
+/Lib:"C:\Users\Dominic\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\x64\ilc\lib\Private"
+/WinMD:"C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"b6ea46cc-01ce-4fc4-8cb4-52adeec23dd1\",\"Id\":\"cd1746fa-950f-48e3-b4c7-772c719a93fd\",\"ProcessStartTime\":637518545697105909}"
+/RdXmlPath:"C:\Users\Dominic\.nuget\packages\microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\LibraryXML"
+/RunOnlyPreDR

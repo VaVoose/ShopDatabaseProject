@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>731e2d96-8670-43b6-a4be-efb6ab16a2db</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Dominic</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Dominic Ferrante</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
@@ -19,18 +19,18 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>952A4AD111132266B23091A7D8A20C6558AA3145F48C3D1B1301A4084D2CBD9B</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>731e2d96-8670-43b6-a4be-efb6ab16a2db_1.0.0.0_x86__jbwxvvtd9y170</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>731e2d96-8670-43b6-a4be-efb6ab16a2db_jbwxvvtd9y170!App</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>FA61235853514D5B4A60FD731F12EFFB310B005FB31FAD9ABD1B0DD474E69517</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>731e2d96-8670-43b6-a4be-efb6ab16a2db_1.0.0.0_x86__4s1jyfp226npm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>731e2d96-8670-43b6-a4be-efb6ab16a2db_4s1jyfp226npm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>731e2d96-8670-43b6-a4be-efb6ab16a2db</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Dominic</RegisteredPackagePublisher>
+    <RegisteredPackagePublisher>CN=Dominic Ferrante</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-20T16:46:46.987</Modified>
+      <Modified>2021-03-20T17:06:23.231</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -345,11 +345,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-03-20T16:46:46.604</Modified>
+      <Modified>2021-03-20T17:06:22.690</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\ShopDB.exe">
       <PackagePath>ShopDB.exe</PackagePath>
-      <Modified>2021-03-20T16:46:46.982</Modified>
+      <Modified>2021-03-20T17:06:23.224</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

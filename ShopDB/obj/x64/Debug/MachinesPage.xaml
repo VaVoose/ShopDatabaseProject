@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="ShopDB.MachinesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShopDB"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+                <Button x:ConnectionId='7'              Content="Back"  VerticalAlignment="Top" />
+                <TextBox x:ConnectionId='8' Name="txtNewMachineName" Width="300"></TextBox>
+                <Button x:ConnectionId='9'                    Content="Add Machine" VerticalAlignment="Top" />
+            </StackPanel>
+            <TextBox x:ConnectionId='2' x:Name="FilterByMachineName" Header="Machine Name Search" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20"
+                                               />
+            <ListView x:ConnectionId='3' Name="MachinesOutput">
+                <ListView.ItemTemplate>
+                    <DataTemplate                            >
+                        <StackPanel x:ConnectionId='4' Orientation="Horizontal">
+                            <!--
+                            <TextBlock Name="RecordID" 
+                                       Text="{x:Bind recordID}"
+                                       Width="80"
+                                       Margin="0,0"/>
+                            -->
+                            <TextBlock x:ConnectionId='5' Name="MachineName" 
+                                                                  
+                                       MinWidth="900"/>
+                            <Button x:ConnectionId='6'                                                       Content="Delete"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Page>
+
