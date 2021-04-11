@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="731e2d96-8670-43b6-a4be-efb6ab16a2db" Publisher="CN=Dominic Ferrante" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="731e2d96-8670-43b6-a4be-efb6ab16a2db" Publisher="CN=Dominic Ferrante" Version="1.0.12.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="731e2d96-8670-43b6-a4be-efb6ab16a2db" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>ShopDB</DisplayName>
-    <PublisherDisplayName>Dominic</PublisherDisplayName>
+    <PublisherDisplayName>Dominic Ferrante</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

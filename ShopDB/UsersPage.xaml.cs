@@ -37,7 +37,8 @@ namespace ShopDB
             Users = DataAccess.GetUserList();
 
 
-            UsersOutput.ItemsSource = Users.OrderBy(user => user.lastName);
+            UsersOutput.ItemsSource = Users;
+            //.OrderBy(user => user.lastName)
 
             UserList = new List<UserList>(Users);
         }
@@ -54,14 +55,18 @@ namespace ShopDB
         }
 
         private void Add(object sender, RoutedEventArgs e) {
-
-            this.Frame.Navigate(typeof(NewUserPage), txtNewUserID.Text);
+            if (int.TryParse(txtNewUserID.Text, out int i)){
+                this.Frame.Navigate(typeof(NewUserPage), txtNewUserID.Text);
+            }
         }
 
         private void deleteUser(object sender, RoutedEventArgs e)
         {
             var itemDataContext = (sender as FrameworkElement).DataContext;
             string recordID = itemDataContext.ToString();
+            if (CurrentUser.id == recordID) {
+                return;
+            }
             DataAccess.deleteUser(recordID);
             refreshGrid();
         }

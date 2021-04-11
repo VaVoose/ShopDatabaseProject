@@ -34,7 +34,7 @@
                         <StackPanel x:ConnectionId='4' Orientation="Horizontal">
                             <TextBlock x:ConnectionId='5' Name="machineName" 
                                                                   
-                                       Width="80"
+                                       Width="300"
                                        Margin="0,0"/>
                             <TextBlock x:ConnectionId='6' Name ="DateCertified" 
                                                                

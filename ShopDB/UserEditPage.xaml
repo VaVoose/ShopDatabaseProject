@@ -34,7 +34,7 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Name="machineName" 
                                        Text="{x:Bind machineName}"
-                                       Width="80"
+                                       Width="300"
                                        Margin="0,0"/>
                             <TextBlock Name ="DateCertified" 
                                        Text="{x:Bind certDate}"

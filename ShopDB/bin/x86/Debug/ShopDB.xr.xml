@@ -33,7 +33,6 @@
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Background" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Name" />
       <RootEvent Name="Click" />
@@ -46,7 +45,6 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Name" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="MaxLength" />
       <RootProperty Name="CharacterSpacing" />
       <RootProperty Name="FontWeight" />
@@ -72,7 +70,6 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Text" />
       <RootProperty Name="MinWidth" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="FontSize" />

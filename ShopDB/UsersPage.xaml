@@ -12,7 +12,7 @@
         <StackPanel HorizontalAlignment="Center">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
                 <Button Click="Back" Content="Back"  VerticalAlignment="Top" />
-                <TextBox Name="txtNewUserID" Width="300" PlaceholderText="New User ID"></TextBox>
+                <TextBox Name="txtNewUserID" Width="300" PlaceholderText="New User ID" MaxLength="9"></TextBox>
                 <Button Click="Add" Content="Add User"  VerticalAlignment="Top" />
             </StackPanel>
             <TextBox x:Name="FilterByLName" Header="Last Name Search" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20"

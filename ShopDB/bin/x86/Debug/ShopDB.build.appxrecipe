@@ -241,30 +241,6 @@
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.xr.xml">
       <PackagePath>ShopDB.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\App.xbf">
-      <PackagePath>App.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\AdminPage.xbf">
-      <PackagePath>AdminPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MachinesPage.xbf">
-      <PackagePath>MachinesPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\NewUserPage.xbf">
-      <PackagePath>NewUserPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserCertPage.xbf">
-      <PackagePath>UserCertPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserEditPage.xbf">
-      <PackagePath>UserEditPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UsersPage.xbf">
-      <PackagePath>UsersPage.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>

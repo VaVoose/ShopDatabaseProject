@@ -1,6 +1,6 @@
-MainPackage=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Release\ShopDB_1.0.1.0_x64.appx
-SymbolPackage=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Release\Symbols\ShopDB_1.0.1.0_x64.appxsym
-ResourcePack=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Release\ShopDB_1.0.1.0_scale-100.appx
-ResourcePack=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Release\ShopDB_1.0.1.0_scale-125.appx
-ResourcePack=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Release\ShopDB_1.0.1.0_scale-150.appx
-ResourcePack=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Release\ShopDB_1.0.1.0_scale-400.appx
+MainPackage=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Debug\ShopDB_1.0.12.0_x64_Debug.appx
+SymbolPackage=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\obj\x64\Debug\Symbols\ShopDB_1.0.12.0_x64_Debug.appxsym
+ResourcePack=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Debug\ShopDB_1.0.12.0_scale-100.appx
+ResourcePack=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Debug\ShopDB_1.0.12.0_scale-125.appx
+ResourcePack=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Debug\ShopDB_1.0.12.0_scale-150.appx
+ResourcePack=C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x64\Debug\ShopDB_1.0.12.0_scale-400.appx

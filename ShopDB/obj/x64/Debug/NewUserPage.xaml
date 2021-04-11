@@ -6,12 +6,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="Black">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <!--Creating style used for all text blocks-->
     <Page.Resources>
         <Style x:Key="textBlockStyle" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="White" />
             <Setter Property="FontFamily" Value="Consolas" />
             <Setter Property="FontWeight" Value="ExtraBold" />
             <Setter Property="FontSize" Value="36" />
@@ -33,17 +32,17 @@
 
             <Grid Width="750" Margin="0,15,0,15">
                 <TextBlock HorizontalAlignment="Left" Text="Enter First Name: " />
-                <TextBox x:ConnectionId='5' HorizontalAlignment="Right" Foreground="White" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Name="txtFirstName" Width="350" />
+                <TextBox x:ConnectionId='5' HorizontalAlignment="Right"  FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Name="txtFirstName" Width="350" />
             </Grid>
 
             <Grid Width="750" Margin="0,15,0,15">
                 <TextBlock HorizontalAlignment="Left" Text="Enter Last Name: " />
-                <TextBox x:ConnectionId='4' HorizontalAlignment="Right" Foreground="White" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36"  Name="txtLastName" Width="350"/>
+                <TextBox x:ConnectionId='4' HorizontalAlignment="Right" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36"  Name="txtLastName" Width="350"/>
             </Grid>
 
             <Grid Width="500" Margin="0,15,0,15">
-                <Button x:ConnectionId='2' HorizontalAlignment="Left"                Background="White" Foreground="OrangeRed" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Content="Cancel" />
-                <Button x:ConnectionId='3' HorizontalAlignment="Right"              Background="White" Foreground="OrangeRed" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Content="Continue" />
+                <Button x:ConnectionId='2' HorizontalAlignment="Left"                 Foreground="OrangeRed" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Content="Cancel" />
+                <Button x:ConnectionId='3' HorizontalAlignment="Right"               Foreground="OrangeRed" FontFamily="Consolas" FontWeight="ExtraBold" FontSize="36" Content="Continue" />
             </Grid>
         </StackPanel>
 

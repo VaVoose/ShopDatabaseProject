@@ -111,12 +111,8 @@ namespace ShopDB
                     ");";
 
                 String insertStatements = "" +
-                    "Insert into User VALUES (1234, 'Dominic', 'Ferrante', 1);" +
-                    "INSERT INTO Machine VALUES ('lathe');" +
-                    "INSERT INTO Machine VALUES ('drill');" +
-                    "INSERT INTO Machine VALUES ('testing');" +
-                    "INSERT INTO Certified VALUES (1234, 1, datetime('now'));" +
-                    "INSERT INTO Certified VALUES (1234, 3, datetime('now'));";
+                    //"INSERT INTO User VALUES (0, 'admin', 'admin', 1) ";
+                    "INSERT INTO User SELECT 0, 'admin', 'admin', 1 WHERE NOT EXISTS (SELECT * FROM User)";
 
                 //Makes those strings into sqlite commands
                 SqliteCommand makeUserTable = new SqliteCommand(createUserTable, db);
@@ -141,9 +137,11 @@ namespace ShopDB
                 makeUserTable.ExecuteReader();
                 makeMachineTable.ExecuteReader();
                 makeCertifiedTable.ExecuteReader();
-                //makeInsertStatements.ExecuteReader();
+                makeInsertStatements.ExecuteReader();
             }
         }
+
+
         /**
          * Demo function to show how to add data to a table using C# and sqlite
          */

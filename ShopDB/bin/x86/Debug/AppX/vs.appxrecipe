@@ -19,24 +19,24 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>FA61235853514D5B4A60FD731F12EFFB310B005FB31FAD9ABD1B0DD474E69517</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>731e2d96-8670-43b6-a4be-efb6ab16a2db_1.0.0.0_x86__4s1jyfp226npm</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>C68C8ECF7BA02373C8096C778F76AB7E872BE87E1E2769851FCACBD1BC1C5B07</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>731e2d96-8670-43b6-a4be-efb6ab16a2db_1.0.11.0_x86__4s1jyfp226npm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>731e2d96-8670-43b6-a4be-efb6ab16a2db_4s1jyfp226npm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>731e2d96-8670-43b6-a4be-efb6ab16a2db</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Dominic Ferrante</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.11.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-20T17:06:23.231</Modified>
+      <Modified>2021-04-11T19:45:32.199</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.exe">
       <PackagePath>entrypoint\ShopDB.exe</PackagePath>
-      <Modified>2021-03-20T16:45:44.909</Modified>
+      <Modified>2021-04-11T19:45:31.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\.nuget\packages\microsoft.data.sqlite.core\5.0.3\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
@@ -305,39 +305,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\ShopDB.xr.xml">
       <PackagePath>ShopDB.xr.xml</PackagePath>
-      <Modified>2021-03-07T23:43:24.247</Modified>
+      <Modified>2021-04-11T19:01:13.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-03-20T16:36:56.004</Modified>
+      <Modified>2021-04-11T19:45:31.596</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\AdminPage.xbf">
       <PackagePath>AdminPage.xbf</PackagePath>
-      <Modified>2021-03-20T16:36:56.004</Modified>
+      <Modified>2021-04-11T19:45:31.596</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MachinesPage.xbf">
       <PackagePath>MachinesPage.xbf</PackagePath>
-      <Modified>2021-03-20T16:36:56.004</Modified>
+      <Modified>2021-04-11T19:45:31.596</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-03-20T16:36:56.005</Modified>
+      <Modified>2021-04-11T19:45:31.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\NewUserPage.xbf">
       <PackagePath>NewUserPage.xbf</PackagePath>
-      <Modified>2021-03-20T16:36:56.005</Modified>
+      <Modified>2021-04-11T19:45:31.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserCertPage.xbf">
       <PackagePath>UserCertPage.xbf</PackagePath>
-      <Modified>2021-03-20T16:36:56.005</Modified>
+      <Modified>2021-04-11T19:45:31.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UserEditPage.xbf">
       <PackagePath>UserEditPage.xbf</PackagePath>
-      <Modified>2021-03-20T16:36:56.005</Modified>
+      <Modified>2021-04-11T19:45:31.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\UsersPage.xbf">
       <PackagePath>UsersPage.xbf</PackagePath>
-      <Modified>2021-03-20T16:36:56.005</Modified>
+      <Modified>2021-04-11T19:45:31.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -345,11 +345,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-03-20T17:06:22.690</Modified>
+      <Modified>2021-04-11T19:33:02.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dominic\source\repos\ShopDatabaseProject\ShopDB\bin\x86\Debug\Core\ShopDB.exe">
       <PackagePath>ShopDB.exe</PackagePath>
-      <Modified>2021-03-20T17:06:23.224</Modified>
+      <Modified>2021-04-11T19:45:32.194</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

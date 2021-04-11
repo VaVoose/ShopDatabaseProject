@@ -55,9 +55,11 @@ namespace ShopDB
                     this.Frame.Navigate(typeof(AdminPage));
                 }
             }
-            //If the user doesn't exist, clear the text field
+            //If the user doesn't exist
             else {
-                this.Frame.Navigate(typeof(NewUserPage), (txtUserInput.Text).ToString());
+                if (int.TryParse(txtUserInput.Text, out int i)) {
+                    this.Frame.Navigate(typeof(NewUserPage), (txtUserInput.Text).ToString());
+                }
             }
             
         }
