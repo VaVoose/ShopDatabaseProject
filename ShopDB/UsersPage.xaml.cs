@@ -56,7 +56,8 @@ namespace ShopDB
 
         private void Add(object sender, RoutedEventArgs e) {
             if (int.TryParse(txtNewUserID.Text, out int i)){
-                this.Frame.Navigate(typeof(NewUserPage), txtNewUserID.Text);
+                NewUserPageParameters NUPP = new NewUserPageParameters(txtNewUserID.Text, true);
+                this.Frame.Navigate(typeof(NewUserPage), NUPP);
             }
         }
 

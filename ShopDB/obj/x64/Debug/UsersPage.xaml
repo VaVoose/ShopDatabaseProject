@@ -11,12 +11,25 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
-                <Button x:ConnectionId='11'              Content="Back"  VerticalAlignment="Top" />
-                <TextBox x:ConnectionId='12' Name="txtNewUserID" Width="300" PlaceholderText="New User ID" MaxLength="9"></TextBox>
-                <Button x:ConnectionId='13'             Content="Add User"  VerticalAlignment="Top" />
+                <Button x:ConnectionId='12'              Content="Back"  VerticalAlignment="Top" />
+                <TextBox x:ConnectionId='13' Name="txtNewUserID" Width="300" PlaceholderText="New User ID" MaxLength="9"></TextBox>
+                <Button x:ConnectionId='14'             Content="Add User"  VerticalAlignment="Top" />
             </StackPanel>
             <TextBox x:ConnectionId='2' x:Name="FilterByLName" Header="Last Name Search" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20"
                                                 />
+            <ListView>
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="User ID" Width="100" />
+                            <TextBlock Text="First Name" Width="180" />
+                            <TextBlock Text="Last Name" Width="190" />
+                            <TextBlock Text="Is Admin?" Width="60" />
+
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+            </ListView>
             <ListView x:ConnectionId='3' Name="UsersOutput" >
                 <ListView.ItemTemplate>
                     <DataTemplate                            >

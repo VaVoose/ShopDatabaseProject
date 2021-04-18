@@ -17,9 +17,9 @@ a '?' character at the end of it. If either of the 2 characters change from swip
 will not be able to automatically detect the swipes of ID cards and continue.
 
 An example ID is found below:
-Scanned in from scanner: ;00114293401?
-What is listed on ONU ID Card: 00114293401
-What the the identifying portion of the ID: 001142934
+Scanned in from scanner = SCANNED: ';00114293401?'
+What is listed on ONU ID Card = FULL: '00114293401'
+What the the identifying portion of the ID = USEABLE: '001142934'
 
 INSTALLATION INSTRUCTIONS:
 1. Open /Dependancies/x64
@@ -71,6 +71,8 @@ Click the 'Add Machine' button
 TO ASSIGN CERTIFICATIONS TO STUDENTS:
 Log in with an admin account
 Select the 'Users' option
+(~Note~ At the top a admin can manually enter in a user ID, ENTER IN THE USEABLE PORTION OF THE ID HERE, not the 
+value of the swiped ID card. See important note at the top of this document)
 On the user that you want to add a certification to, click the 'Edit User Certs' Button
 (~Note~ You can delete users by selecting the 'Delete; button next to 'Edit User Certs' button)
 From the dropdown at the top middle select the machine that is being certified

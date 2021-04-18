@@ -58,7 +58,8 @@ namespace ShopDB
             //If the user doesn't exist
             else {
                 if (int.TryParse(txtUserInput.Text, out int i)) {
-                    this.Frame.Navigate(typeof(NewUserPage), (txtUserInput.Text).ToString());
+                    NewUserPageParameters NUPP = new NewUserPageParameters((txtUserInput.Text).ToString(), false);
+                    this.Frame.Navigate(typeof(NewUserPage), NUPP);
                 }
             }
             

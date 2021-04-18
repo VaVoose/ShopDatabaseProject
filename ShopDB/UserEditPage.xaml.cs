@@ -59,7 +59,7 @@ namespace ShopDB
         }
 
         private void Back(object sender, RoutedEventArgs e) {
-            this.Frame.GoBack();
+            this.Frame.Navigate(typeof(UsersPage));
         }
 
         private void reup(object sender, RoutedEventArgs e) {

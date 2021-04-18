@@ -142,6 +142,7 @@
     <Compile Include="NewUserPage.xaml.cs">
       <DependentUpon>NewUserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewUserPageParameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserCertPage.xaml.cs">
       <DependentUpon>UserCertPage.xaml</DependentUpon>

@@ -24,6 +24,7 @@ namespace ShopDB
     {
 
         private string userID;
+        private bool admin;
 
         public NewUserPage()
         {
@@ -33,8 +34,9 @@ namespace ShopDB
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            var param = (e.Parameter).ToString(); // get parameter
-            this.userID = param;
+            var param = (NewUserPageParameters)e.Parameter; // get parameter
+            userID = param.userID;
+            admin = param.admin;
             tbUserID.Text = userID;
         }
 
@@ -53,7 +55,14 @@ namespace ShopDB
             {
                 if (DataAccess.GetUserInfo(userID))
                 {
-                    this.Frame.Navigate(typeof(UserCertPage));
+                    if (admin)
+                    {
+                        this.Frame.Navigate(typeof(UserEditPage), userID);
+                    }
+                    else {
+                        this.Frame.Navigate(typeof(UserCertPage));
+                    }
+                    
                 }
             }
             else {

@@ -17,6 +17,19 @@
             </StackPanel>
             <TextBox x:Name="FilterByLName" Header="Last Name Search" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20"
              TextChanged="lastNameFilterChanged"/>
+            <ListView>
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="User ID" Width="100" />
+                            <TextBlock Text="First Name" Width="180" />
+                            <TextBlock Text="Last Name" Width="190" />
+                            <TextBlock Text="Is Admin?" Width="60" />
+
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+            </ListView>
             <ListView Name="UsersOutput" >
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:UserList">
